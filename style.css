@@ -1,16 +1,24 @@
 
+    header{
+
+        background-color: black;
+        text-align: center;
+        color:aliceblue;
+        padding-top: 2px;
+        font-family:fantasy;
+        font-size: large;
+        
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       background-color: black;
     }
     
-    
-    
-    /* Create a column layout with Flexbox */
-    .container{
-
-        display: flex;
-       
+    .logo{
+    margin-top: 10px;
+    float: left;
+    margin-left: 10px;
     }
 
     .pageContent{
@@ -24,13 +32,16 @@
 
         background-color: black;
         color: aliceblue;
+        float: left;
     }
     /* Style the search box */
     #searchList {
-      width: 100%;
+      width: fit-content;
       font-size: 18px;
       padding: 11px;
       border: 1px solid #ddd;
+      width: 93%;
+      
     }
     
     /* Style the navigation menu inside the left column */
