@@ -1,73 +1,123 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<title>Design system</title>
-<meta name="viewport" content="width=device-width">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
+  <head>
+    <title>Design system</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menuList" style="width: 100%">
+        <h3 class="Menu">Menu</h3>
+        <input
+          type="text"
+          id="searchList"
+          onkeyup="myFunction()"
+          placeholder="Search.."
+        />
+        <ul id="list">
+          <li>
+            <a href="#"><b>Guidelines</b></a>
 
-
-
-<div class="menuList" style="width:25%">
-  <h3 class="Menu">Menu</h3>
-  <input type="text" id="searchList" onkeyup="myFunction()" placeholder="Search..">
-  <ul id="list">
-    <li><a href="#"><b>Guidelines</b></a>
-    
-    <ul>
-        <li><a href="#">Typography</a></li>
-        <li><a href="#">Colours</a></li>
-    </ul>
-    
-    </li>
-    <li><a href="#"><b>Components</b></a>
-        <ul>
-            <li><a href="#">Buttons</a></li>
-            <li><a href="#">Images</a></li>
-            <li><a href="#">Field</a></li>
-            <li><a href="#">Dialogue</a></li>
-            <li><a href="#">Buttons</a></li>
-            <li><a href="#">forms</a></li>
-            <li><a href="#">checkbox</a></li>
-            <li><a href="#">Header</a></li>
-            <li><a href="#">Footer</a></li>
-            <li><a href="#">Tables</a></li>
-            <li><a href="#">Lists</a></li>
-            
+            <ul>
+              <li><a href="#">Typography</a></li>
+              <li><a href="#">Colours</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><b>Components</b></a>
+            <ul>
+              <li><a href="#">Buttons</a></li>
+              <li><a href="#">Images</a></li>
+              <li><a href="#">Field</a></li>
+              <li><a href="#">Dialogue</a></li>
+              <li><a href="#">Forms</a></li>
+              <li><a href="#">Checkbox</a></li>
+              <li><a href="#">Header</a></li>
+              <li><a href="#">Footer</a></li>
+              <li><a href="#">Tables</a></li>
+              <li><a href="#">Lists</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><b>Style utilities </b></a>
+            <ul>
+              <li><a href="#">Flexbox</a></li>
+              <li><a href="#">Position</a></li>
+              <li><a href="#">display</a></li>
+              <li><a href="#">Fonts</a></li>
+              <li><a href="#">Float</a></li>
+              <li><a href="#">Margin and Padding</a></li>
+              <li><a href="#">Shadow</a></li>
+            </ul>
+          </li>
         </ul>
-    </li>
-    <li><a href="#"><b>Style utilities </b></a>
-        <ul>
-            <li><a href="#">Flexbox</a></li>
-            <li><a href="#">Position</a></li>
-            <li><a href="#">display</a></li>
-            <li><a href="#">Fonts</a></li>
-            <li><a href="#">Float</a></li>
-            <li><a href="#">Margin and Padding</a></li>
-            <li><a href="#">Shadow</a></li>
-        </ul></li>
-    
-  </ul>
+      </div>
 
-</div>
+      <!-- Page Content -->
+      <div class="Title">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="images/logo.png"
+              alt="Design System Logo"
+              width="100"
+              height="80"
+          /></a>
 
-<!-- Page Content -->
-<div class="logo">
-    <a href="index.html"><img src="images/logo.png"
-            alt="Design System Logo" width="100"
-            height="100"></a>
-</div>
+          <header>
+            <h1>Design System</h1>
+          </header>
+        </div>
 
-<header>
-    
-  <h1>Design System</h1>
+        <main>
+          <div class="pageContent">
+            <img src="images/IntroImage.png" />
+            <h2>Introduction</h2>
+            <p>
+              Welcome to our design system, where we strive to create a seamless
+              and consistent user experience across all of our digital products.
+              Our design principles are grounded in simplicity, accessibility,
+              and user-centered design, ensuring that every element of our
+              website serves a purpose and enhances the overall experience for
+              our users. Whether you're a designer, developer, or content
+              creator, our design system has everything you need to build
+              beautiful and functional interfaces. Let's create a better future
+              together, one pixel at a time.
+            </p>
+          </div>
+          <div class="usage">
+            <h2>Usage of Design System</h2>
+            <p>
+              A design system is a collection of defined elements, rules, and
+              ideas that give a product or brand a unified appearance. By using
+              it, businesses may improve the efficiency of their design and
+              development processes, assure accessibility, and maintain brand
+              consistency. Colors, typography, and iconography are examples of
+              visual aspects that may be included in design systems. Non-visual
+              elements can also be included, such as voice and tone, coding
+              elements, and user experience patterns. They may be used to a
+              variety of touchpoints, including websites, mobile apps, and
+              goods. The use of a design system may enhance coordination between
+              designers, developers, and stakeholders, streamlining and
+              increasing the effectiveness of the design and development
+              process.
+            </p>
+          </div>
+        </main>
 
-</header>
-
-
-<script src="appp.js"></script> 
-</body>
+        <footer>
+          <div>
+            <p>
+              <span>&copy;</span> Copyright by SAI SRINIVAS ALAHARI, 2023. All
+              rights reserved.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="appp.js"></script>
+  </body>
 </html>
