@@ -1,0 +1,174 @@
+/* alternative root font size to allow easier conversion from px to rem */
+
+/* ----------------------------- Html body styling ---------------------------- */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem; /* 18px */
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #161b21;
+  line-height: 30px;
+}
+
+.container {
+  width: 100%;
+  background-color: #161b21;
+  float: left;
+}
+
+/* ----------------------------- Header  styling ---------------------------- */
+
+header {
+  background-color: #161b21;
+  text-align: center;
+  color: brown;
+  font-family: fantasy;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: brown;
+}
+/* ----------------------------- Logo positioning ---------------------------- */
+
+.logo {
+  float: left;
+  margin-left: 10px;
+  margin-top: -30px;
+}
+
+/* ----------------------------- Page content div Styling ---------------------------- */
+
+.pageContent {
+  width: 100%;
+  background-color: #161b21;
+  color: aliceblue;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.usage::before {
+  content: "\a";
+  white-space: pre;
+}
+
+/* ----------------------------- Page content image styling ---------------------------- */
+
+.pageContent img {
+  padding: 20px 0px 10px 10px;
+  width: 1124px;
+  height: 400px;
+}
+
+/* ----------------------------- Side menulist styling ---------------------------- */
+
+.menuList {
+  background-color: #161b21;
+  color: aliceblue;
+  float: left;
+  height: 960px;
+  overflow-y: scroll;
+  scrollbar-width: remove;
+  border: 1px brown;
+}
+
+/* ----------------------------- Search box styling ---------------------------- */
+
+#searchList {
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* ----------------------------- Style the navigation menu list inside the left column ---------------------------- */
+
+#list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+}
+
+/* -----------------------------List elements styling ---------------------------- */
+
+#list li a {
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  color: aliceblue;
+}
+
+/* ----------------------------- List elements hovering effects styling ---------------------------- */
+
+#list li a:hover {
+  background-color: brown;
+  color: #161b21;
+}
+
+/* ----------------------------- Footer styling ---------------------------- */
+
+footer {
+  color: aliceblue;
+  margin-top: 50px;
+  padding: 2px;
+}
+
+/* ----------------------------- Scroll bar styling ---------------------------- */
+
+.Title {
+  height: 960px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* ----------------------------- Button Styling ---------------------------- */
+
+.Livedemo {
+  height: 200px;
+  position: relative;
+  border: 1px solid brown;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: brown;
+  color: white;
+}
+
+code {
+  font-family: Courier, "New Courier", monospace;
+  font-size: 16px;
+}
+
+#codeSnippet {
+  background-color: #000000;
+  color: green;
+}
