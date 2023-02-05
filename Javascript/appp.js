@@ -13,4 +13,16 @@ function myFunction() {
             item.style.display = "none";
           }
         }
+}
+  
+function clickme() {
+  
+  let result;
+  if (confirm("Press the button of your choice")) {
+    result = "You pressed ok :)";
   }
+  else {
+    result = "You pressed cancel :(";
+  }
+  document.getElementById("demo").innerHTML = result;
+}

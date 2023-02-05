@@ -288,5 +288,5 @@ code {
 }
 
 .gridelement:hover {
-  background-color: brown;
+  background-color: brown; /* Grid element hover effect */
 }

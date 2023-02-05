@@ -77,77 +77,79 @@
         <main>
           <hr />
           <div class="pageContent">
-            <img src="images/gridsystem.png" />
+            <img src="images/dialog.png" />
             <h2>Overview</h2>
             <p>
-              A grid system in design refers to a structure consisting of
-              vertical and horizontal lines that are used to arrange content on
-              a page. It provides a framework for consistent placement of
-              elements, making the design process easier and improving the
-              overall visual hierarchy and balance of the design. A
-              well-designed grid system can help create a harmonious, organized,
-              and aesthetically pleasing layout.
+              A dialog in a design system refers to the graphical user interface
+              (GUI) element that allows users to interact with a computer
+              program by providing information or making selections. A dialog
+              typically appears as a window that floats above the main
+              application window, and it can include various elements such as
+              text fields, buttons, drop-down menus, checkboxes, and others. The
+              purpose of a dialog in a design system is to allow users to input
+              information, make choices, or access additional functionality.
+              Dialogs are a crucial component of a design system because they
+              help to provide a consistent user experience and ensure that the
+              software is easy to use and understand.
             </p>
           </div>
           <div class="pageContent">
-            <h2>Types of Grids</h2>
-            <p style="color: aliceblue">Grid (Size 1 of 1):</p>
-            <div class="gridblock">
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-            </div>
+            <h2>When to use</h2>
+            <p>
+              <p>1. When you need to display or gather information that is not part of the main user flow, such as a confirmation prompt or a form.</p>
+              <p>2. When you need to present users with a choice that is important but not crucial to their current task, such as a preferences menu.</p>
+            </p>
+          </div>
 
-            <p style="color: aliceblue">Grid (Size 1 of 2):</p>
-            <div class="gridblock">
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-            </div>
+          <div class="pageContent">
+            <h2>When not to use</h2>
+            <p>
+              <p>1. When the information is critical to the user's current task and needs to be always visible, such as an error message or a progress bar.</p>
+              <p>2. When the information is redundant or could be presented in a simpler, more direct way, such as a tooltip.</p>
+            </p>
+            <br>
+            <p>Remember to always prioritize clear and concise user communication and to only use dialogs when necessary to avoid overloading the user with information.</p>
+          </div>
 
-            <p style="color: aliceblue">Grid (Size 1 of 3):</p>
-            <div class="gridblock">
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-            </div>
-
-            <p style="color: aliceblue">Grid (Size 1 of 7):</p>
-            <div class="gridblock">
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-              <div class="gridelement">
-                <p>Element</p>
-              </div>
-              <div class="gridelement">
-                <p>Element</p>
+          <div class="pageContent">
+            <h2>Live demo</h2>
+            <div class="Livedemo">
+              <div class="center">
+                <button class="btn" onclick="clickme()">Click me</button>
+                <p id="demo"></p>
               </div>
             </div>
           </div>
         </main>
+        <div class="pageContent">
+          <h2>Code Snippet</h2>
+          <div id="codeSnippet">
+            <pre>
+          <code>
 
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;button&gt;Button&lt;/button&gt;
+            &lt;script&gt;
+            function clickme() {
+            let result;
+            if (confirm(&quot;Press the button of your choice&quot;)) {
+                  result= &quot;You pressed ok :)&quot;}
+            else {
+                  result = &quot;You pressed cancel :(&quot;}
+            document.getElementById(&quot;demo&quot;).innerHTML = result;
+                                }
+            &lt;/script&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+          </code>
+        </pre>
+          </div>
+        </div>
         <footer>
           <div>
             <p>
