@@ -26,3 +26,9 @@ function clickme() {
   }
   document.getElementById("demo").innerHTML = result;
 }
+
+function confirmMessage() {
+ 
+  alert("Your form submitted succesfully");
+
+}

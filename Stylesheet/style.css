@@ -290,3 +290,11 @@ code {
 .gridelement:hover {
   background-color: brown; /* Grid element hover effect */
 }
+
+/* --------        --------         --------      Styling for form.html       --------       --------       --------  */
+
+form {
+  background-color: brown;
+  margin: 20px 0px 20px 0px;
+  padding: 10px;
+}
