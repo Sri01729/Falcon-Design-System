@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design system</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menuList">
+        <h3 class="Menu">Menu</h3>
+        <input
+          type="text"
+          id="searchList"
+          onkeyup="myFunction()"
+          placeholder="Search.."
+          size="25"
+        />
+        <ul id="list">
+          <li>
+            <a class="listheading" href="#"><b>Guidelines</b></a>
+
+            <ul>
+              <li><a href="typography.html">Typography</a></li>
+              <li><a href="colours.html">Colours</a></li>
+              <li><a href="gridsystem.html">Grid System</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="listheading" href="#"><b>Components</b></a>
+            <ul>
+              <li><a href="Button.html">Buttons</a></li>
+              <li><a href="dialog.html">Dialog</a></li>
+              <li><a href="field.html">Field</a></li>
+              <li><a href="#">Dialogue</a></li>
+              <li><a href="form.html">Forms</a></li>
+              <li><a href="#">Checkbox</a></li>
+              <li><a href="#">Header</a></li>
+              <li><a href="#">Footer</a></li>
+              <li><a href="#">Tables</a></li>
+              <li><a href="#">Lists</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="listheading" href="#"><b>Style utilities </b></a>
+            <ul>
+              <li><a href="#">Flexbox</a></li>
+              <li><a href="#">Position</a></li>
+              <li><a href="#">display</a></li>
+              <li><a href="#">Fonts</a></li>
+              <li><a href="#">Float</a></li>
+              <li><a href="#">Margin and Padding</a></li>
+              <li><a href="#">Shadow</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Page Content -->
+      <div class="Title">
+        <header>
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="images/logo.png"
+                alt="Design System Logo"
+                width="100"
+                height="80"
+            /></a>
+          </div>
+
+          <h1>Design System</h1>
+        </header>
+
+        <main>
+          <hr />
+          <div class="pageContent">
+            <img src="images/form.png" />
+            <h2>Overview</h2>
+            <p>
+              Forms are a fundamental component of any design system and can include a variety of input fields, such as text boxes, drop-down menus, radio buttons, checkboxes, and more. They are used to gather information from users, such as personal information, preferences, or feedback.
+
+            </p>
+          </div>
+          <div class="pageContent">
+            <h2>When to use</h2>
+            <p>
+              <p>Forms should be used when the interface requires the collection of information from the user, such as when creating an account, making a purchase, or providing feedback.</p>
+            </p>
+          </div>
+
+          <div class="pageContent">
+            <h2>When not to use</h2>
+            <p>
+              <p>Forms should not be used when the interface does not require user input or when there is no need to gather information from the user. In these cases, a simple display element or a different interaction method may be more appropriate.</p>
+            </p>
+            <br>
+            <p>In a design system, forms should be designed to be intuitive and user-friendly, with clear labels and instructions, consistent formatting, and accessible to all users. It's also important to ensure that forms are secure, protecting the user's sensitive information and preventing data breaches.</p>
+          </div>
+
+          <div class="pageContent">
+            <h2>Live demo</h2>
+            <div class="Livedemo">
+              <div class="center">
+                <form>
+                        <label>Your Name</label>
+                        <input type="text" id="fname" name="firstname"
+                            placeholder="Your name.."><br>
+                        <label for="cars">Gender:</label><br> 
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select> <br>
+                        <label>Email</label>
+                        <input type="text" id="Email" name="Email"
+                            placeholder="Your Email.."><br>
+                        <input type="submit" onclick="confirmMessage()" value="Submit">
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="pageContent">
+          <h2>Code Snippet</h2>
+          <div id="codeSnippet">
+            <pre>
+          <code>
+
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;form&gt;
+            &lt;label&gt;Your Name&lt;/label&gt;
+            &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;firstname&quot;
+               placeholder=&quot;Your name..&quot;&gt;&lt;br&gt;
+            &lt;label for=&quot;cars&quot;&gt;Gender:&lt;/label&gt;&lt;br&gt; 
+            &lt;select name=&quot;gender&quot; id=&quot;gender&quot;&gt;
+            &lt;option value=&quot;male&quot;&gt;Male&lt;/option&gt;
+            &lt;option value=&quot;female&quot;&gt;Female&lt;/option&gt;
+            &lt;/select&gt; &lt;br&gt;
+            &lt;label&gt;Email&lt;/label&gt;
+            &lt;input type=&quot;text&quot; id=&quot;Email&quot; name=&quot;Email&quot;
+               placeholder=&quot;Your Email..&quot;&gt;&lt;br&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+            &lt;/form&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+          </code>
+        </pre>
+          </div>
+        </div>
+        <footer>
+          <div>
+            <p>
+              <span>&copy;</span>
+              <i
+                >Copyright by SAI SRINIVAS ALAHARI, 2023. All rights
+                reserved.</i
+              >
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="Javascript/appp.js"></script>
+  </body>
+</html>
