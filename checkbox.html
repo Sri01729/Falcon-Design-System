@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
   </head>
   <body>
-    <!-- Menu at left column -->
     <div class="container">
       <div class="menuList">
         <h3 class="Menu">Menu</h3>
@@ -78,40 +77,94 @@
         <main>
           <hr />
           <div class="pageContent">
-            <img src="images/IntroImage.png" />
-            <h2>Introduction</h2>
+            <img src="images/checkbox.png" />
+            <h2>Overview</h2>
             <p>
-              Welcome to our design system, where we strive to create a seamless
-              and consistent user experience across all of our digital products.
-              Our design principles are grounded in simplicity, accessibility,
-              and user-centered design, ensuring that every element of our
-              website serves a purpose and enhances the overall experience for
-              our users. Whether you're a designer, developer, or content
-              creator, our design system has everything you need to build
-              beautiful and functional interfaces. Let's create a better future
-              together, one pixel at a time.
+              In a design system, checkboxes are used as a way to allow users to
+              indicate a binary choice or multiple choices. Some common examples
+              include selecting preferences, acknowledging terms and conditions,
+              or marking items as complete.
             </p>
           </div>
           <div class="pageContent">
-            <h2>Usage of Design System</h2>
+            <h2>When to use</h2>
             <p>
-              A design system is a collection of defined elements, rules, and
-              ideas that give a product or brand a unified appearance. By using
-              it, businesses may improve the efficiency of their design and
-              development processes, assure accessibility, and maintain brand
-              consistency. Colors, typography, and iconography are examples of
-              visual aspects that may be included in design systems. Non-visual
-              elements can also be included, such as voice and tone, coding
-              elements, and user experience patterns. They may be used to a
-              variety of touchpoints, including websites, mobile apps, and
-              goods. The use of a design system may enhance coordination between
-              designers, developers, and stakeholders, streamlining and
-              increasing the effectiveness of the design and development
-              process.
+              When you need to allow users to select multiple options from a set
+              of choice, only if the choices are independent and do not affect
+              each other And also When the number of options are low.
             </p>
           </div>
-        </main>
+          <div class="pageContent">
+            <h2>When not to use</h2>
+            <p>
+              When you need users to enter a numerical value and if the options
+              are not independent and affect each other then use radio buttons.
+              Also if the number of options is large, consider using a drop-down
+              menu or a select component.
+            </p>
+            <br />
+            <p>
+              It's important to consider accessibility when using checkboxes,
+              ensure that their purpose and state are clear to all users,
+              including those using assistive technology.
+            </p>
+          </div>
 
+          <div class="pageContent">
+            <h2>Live demo</h2>
+            <div class="Livedemo">
+              <div class="center">
+                <p>Select the languages you want to learn</p>
+                <input
+                  type="checkbox"
+                  id="java"
+                  name="language1"
+                  value="Java"
+                />
+                <label for="language1">Java</label><br />
+                <input
+                  type="checkbox"
+                  id="python"
+                  name="language2"
+                  value="python"
+                />
+                <label for="language2">Python</label><br />
+                <input
+                  type="checkbox"
+                  id="Javascript"
+                  name="language3"
+                  value="Javascript"
+                />
+                <label for="language3">Javascript</label><br /><br />
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="pageContent">
+          <h2>Code Snippet</h2>
+          <div id="codeSnippet">
+            <pre>
+          <code>
+
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;input
+              type=&quot;checkbox&quot;
+              id=&quot;id_name&quot;
+              name=&quot;name&quot;
+              value=&quot;value&quot;
+            /&gt;
+            &lt;label &gt;Javascript&lt;/label&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+          </code>
+        </pre>
+          </div>
+        </div>
         <footer>
           <div>
             <p>
