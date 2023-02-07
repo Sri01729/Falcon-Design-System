@@ -77,36 +77,71 @@
         <main>
           <hr />
           <div class="pageContent">
-            <img src="images/field.png" />
+            <img src="images/checkbox.png" />
             <h2>Overview</h2>
             <p>
-              Input fields are crucial in any website for better communication with the users. They allow users to enter data such as text, numbers, or selections.
-            </p>
-          </div>
-          <div class="pageContent">
-            <h2>When to use</h2>
-            <p>
-              <p>Input fields should be used when the interface requires user input, such as filling out a form, entering a password, or making a selection. They are an essential component of any user-driven interaction.</p>
+              A radio button is a graphical element that allows a user to choose
+              one option from a set. When a radio button is selected, it is
+              highlighted and cannot be deselected until another option is
+              chosen. Radio buttons are often used in forms and surveys, where
+              multiple options are presented and the user must choose only one.
             </p>
           </div>
 
           <div class="pageContent">
+            <h2>When to use</h2>
+            <p>
+             Radio buttons are a good choice when you want to:<br />
+              <ul>
+              <li>Present a list of options where only one can be selected</li>
+              <li>Show that only one option can be selected at a time</li>
+              <li>Offer a clear visual representation of available options</li>
+              </ul>
+            </p>
+          </div>
+          <div class="pageContent">
             <h2>When not to use</h2>
             <p>
-              <p>Input fields should not be used when the information being presented is purely informational, such as a display of the user's name or account balance. In these cases, a simple display element is more appropriate.</p>
+              Radio buttons may not be the best choice when:<br />
+              <ul>
+              <li>The user needs to select more than one option.</li>
+              <li>The options are not mutually exclusive</li>
+              <li>The options need to be presented in a different format, such as a dropdown menu or a list of checkboxes</li>
+              </ul>
             </p>
-            <br>
-            <p>In a design system, it's important to ensure that input fields are consistent and intuitive to use. They should also adhere to accessibility guidelines and be designed in a way that is user-friendly and easy to understand.</p>
+            <br />
+            <p>
+              Overall, radio buttons are a straightforward and effective component in a design system, but it's important to consider the context and options being presented before choosing to use them.
+            </p>
           </div>
+
 
           <div class="pageContent">
             <h2>Live demo</h2>
             <div class="Livedemo">
               <div class="center">
-                <input type="text" id="fname" name="fname" placeholder="Enter your first name" style="height: 30px; margin: 5px 5px 5px 5px;" size="50">
-                <input type="text" id="lname" name="lname" placeholder="Enter your last name" style="height: 30px; margin: 5px 5px 5px 5px;" size="50">
-                <input type="text" id="email" name="email" placeholder="Enter your email" style="height: 30px; margin: 5px 5px 5px 5px;" size="50">
-                <p id="demo"></p>
+                <p>Select the languages you want to learn</p>
+                <input
+                  type="radio"
+                  id="java"
+                  name="language1"
+                  value="Java"
+                />
+                <label for="language1">Java</label><br />
+                <input
+                  type="radio"
+                  id="python"
+                  name="language2"
+                  value="python"
+                />
+                <label for="language2">Python</label><br />
+                <input
+                  type="radio"
+                  id="Javascript"
+                  name="language3"
+                  value="Javascript"
+                />
+                <label for="language3">Javascript</label><br /><br />
               </div>
             </div>
           </div>
@@ -122,7 +157,13 @@
             &lt;head&gt;
             &lt;/head&gt;
             &lt;body&gt;
-            &lt;input type="text" id="id_name" name="input_name" placeholder="placeholder text here"&gt;
+            &lt;input
+              type=&quot;radio&quot;
+              id=&quot;id_name&quot;
+              name=&quot;name&quot;
+              value=&quot;value&quot;
+            /&gt;
+            &lt;label &gt;Javascript&lt;/label&gt;
             &lt;/body&gt;
             &lt;/html&gt;
 
