@@ -77,40 +77,67 @@
         <main>
           <hr />
           <div class="pageContent">
-            <img src="images/Button.png" />
+            <img src="images/card.png" />
             <h2>Overview</h2>
             <p>
-              Buttons are interactive elements that initiate a certain action
-              when clicked. They serve as instructions for the user, giving them
-              the ability to interact with the page in various ways. The text on
-              the button informs the user of the action that will happen when
-              they click it.
+              A card is typically a container with a defined width and height,
+              which holds a variety of content such as text, images, and action
+              buttons. They are often used to group related information in a
+              clear and concise manner.
             </p>
           </div>
           <div class="pageContent">
             <h2>When to use</h2>
             <p>
-              It is recommended to utilize buttons to communicate actions to
-              users and to enable interaction with the page. Each page should
-              have a prominent button and any additional actions should be
-              represented with buttons of lower importance.
+              Cards are a good choice when you want to:<br />
+              <ul>
+              <li>Display a collection of related items, such as products, blog
+              posts, or news articles</li>
+              <li>Present information in a visually engaging way</li>
+              <li>Provide users with quick access to actions or additional
+              information</li>
+              </ul>
             </p>
           </div>
-
           <div class="pageContent">
             <h2>When not to use</h2>
             <p>
-              Avoid using buttons as a means of navigation. For navigation
-              purposes, use links instead when you want to direct the user to a
-              different page.
+              Cards may not be the best choice when:<br />
+              <ul>
+              <li>The information is not related or does not need to be grouped</li>
+              <li>Space is limited, and you need to display a large amount of information in a small area</li>
+              <li>The information is not suited for a visual presentation, such as large tables or data sets.</li>
+              </ul>
+            </p>
+            <br />
+            <p>
+              Overall, cards can be a useful component in a design system, but it's important to consider the context and content being displayed before choosing to use them.
             </p>
           </div>
 
           <div class="pageContent">
             <h2>Live demo</h2>
+            <p>Some card types:</p>
             <div class="Livedemo">
               <div class="center">
-                <button class="btn">Button</button>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Place the cursor over here</h3> </div>
+                        <div class="flip-card-back">
+                            <p> 
+                              This is Flip Card
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="Livedemo">
+              <div class="center">
+                  <div class="flip-card">                   
+                      <p style="text-align: center; padding-top:20px;">This is the normal card without image.</p>                   
+                  </div>
               </div>
             </div>
           </div>
@@ -124,9 +151,22 @@
             &lt;!DOCTYPE html&gt;
             &lt;html&gt;
             &lt;head&gt;
+            &lt;style&gt;
+              .cardwithimage 
+              {
+                border: solid 2px black;
+                width: 40%;
+               }
+            &lt;/style&gt;
             &lt;/head&gt;
             &lt;body&gt;
-            &lt;button&gt;Button&lt;/button&gt;
+            &lt;div class=&quot;cardwithimage&quot;&gt;
+            &lt;img src=&quot;image_path&quot; alt=&quot;Image_text&quot; style=&quot;width:100%&quot;&gt;
+            &lt;div class=&quot;cardcontainer&quot;&gt;
+            &lt;h4&gt;&lt;b&gt;Text heading&lt;/b&gt;&lt;/h4&gt; 
+            &lt;p&gt;Related text&lt;/p&gt; 
+            &lt;/div&gt;
+            &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
 
