@@ -77,36 +77,49 @@
         <main>
           <hr />
           <div class="pageContent">
-            <img src="images/field.png" />
+            <img src="images/tooltip.png" />
             <h2>Overview</h2>
             <p>
-              Input fields are crucial in any website for better communication with the users. They allow users to enter data such as text, numbers, or selections.
-            </p>
-          </div>
-          <div class="pageContent">
-            <h2>When to use</h2>
-            <p>
-              <p>Input fields should be used when the interface requires user input, such as filling out a form, entering a password, or making a selection. They are an essential component of any user-driven interaction.</p>
+              Tooltips are used to provide additional information or clarification about a specific element or feature in an application. They can contain text, images, or other media and are often used to explain the function of a button, link, or other UI element.
             </p>
           </div>
 
           <div class="pageContent">
+            <h2>When to use</h2>
+            <p>
+            Tooltips are useful when:<br />
+              <ul>
+              <li>The information being presented is short and does not require a full screen or dedicated space.</li>
+              <li>The information is supplementary or additional to the main content.</li>
+              <li>The user needs quick access to information about a particular element or feature.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="pageContent">
             <h2>When not to use</h2>
             <p>
-              <p>Input fields should not be used when the information being presented is purely informational, such as a display of the user's name or account balance. In these cases, a simple display element is more appropriate.</p>
+              Tooltips may not be appropriate when:<br />
+              <ul>
+              <li>The information is critical or necessary to the user's understanding of the interface.</li>
+              <li>The information is too complex or lengthy to be presented in a small tooltip.</li>
+              <li>The user's device or environment does not support hover or click events.</li>
+              </ul>
             </p>
-            <br>
-            <p>In a design system, it's important to ensure that input fields are consistent and intuitive to use. They should also adhere to accessibility guidelines and be designed in a way that is user-friendly and easy to understand.</p>
+            <br />
+            <p>
+              Overall, tooltips can be a useful design tool in the right context, but they should be used judiciously and with consideration for the user's needs and environment.
+            </p>
           </div>
+
 
           <div class="pageContent">
             <h2>Live demo</h2>
             <div class="Livedemo">
               <div class="center">
-                <input type="text" id="fname" name="fname" placeholder="Enter your first name" style="height: 30px; margin: 5px 5px 5px 5px;" size="50">
-                <input type="text" id="lname" name="lname" placeholder="Enter your last name" style="height: 30px; margin: 5px 5px 5px 5px;" size="50">
-                <input type="text" id="email" name="email" placeholder="Enter your email" style="height: 30px; margin: 5px 5px 5px 5px;" size="50">
-                <p id="demo"></p>
+                <div class="tooltip">
+                  <span style="color: brown;">Hover over me</span>
+                <span class="tooltiptext">Tooltip text</span>
+                </div>
               </div>
             </div>
           </div>
@@ -117,14 +130,38 @@
             <pre>
           <code>
 
-            &lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-            &lt;input type="text" id="id_name" name="input_name" placeholder="placeholder text here"&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
+
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+                .tooltip {
+                  position: relative;
+                  display: inline-block;                 
+                }
+                .tooltip .tooltiptext {
+                  visibility: hidden;
+                  width: 120px;
+                  background-color: black;
+                  color: #fff;
+                  text-align: center;
+                  border-radius: 6px;
+                  padding: 5px 0;
+                  position: absolute;
+                  z-index: 1;
+                }
+                .tooltip:hover .tooltiptext {
+                  visibility: visible;
+                }
+                &lt;/style&gt;
+                &lt;body&gt;
+                &lt;div class=&quot;tooltip&quot;&gt;Hover over me
+                &lt;span class=&quot;tooltiptext&quot;&gt;Tooltip text&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+
+
+
 
           </code>
         </pre>
