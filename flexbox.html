@@ -28,27 +28,22 @@
           <a class="listheading" href="#"><b>Components</b></a>
           <ul>
             <li><a href="Button.html">Buttons</a></li>
+            <li><a href="cards.html">Card</a></li>
+            <li><a href="checkbox.html">Checkbox</a></li>
             <li><a href="dialog.html">Dialog</a></li>
             <li><a href="field.html">Field</a></li>
-            <li><a href="logo.html">Logo</a></li>
             <li><a href="form.html">Forms</a></li>
-            <li><a href="checkbox.html">Checkbox</a></li>
-            <li><a href="cards.html">Card</a></li>
+            <li><a href="logo.html">Logo</a></li>
             <li><a href="radiobutton.html">Radio Button</a></li>
-            <li><a href="tooltip.html">Tooltip</a></li>
             <li><a href="toogle.html">Toogle</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
           </ul>
         </li>
         <li>
           <a class="listheading" href="#"><b>Style utilities </b></a>
           <ul>
+            <li><a href="align.html">Align</a></li>
             <li><a href="flexbox.html">Flexbox</a></li>
-            <li><a href="#">Position</a></li>
-            <li><a href="#">display</a></li>
-            <li><a href="#">Fonts</a></li>
-            <li><a href="#">Float</a></li>
-            <li><a href="#">Margin and Padding</a></li>
-            <li><a href="#">Shadow</a></li>
           </ul>
         </li>
       </ul>
@@ -178,34 +173,32 @@
                 &lt;!DOCTYPE html&gt;
                 &lt;html&gt;
                 &lt;style&gt;
-                .tooltip {
-                  position: relative;
-                  display: inline-block;                 
+                .flexblock {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                justify-content: space-around;
                 }
-                .tooltip .tooltiptext {
-                  visibility: hidden;
-                  width: 120px;
-                  background-color: black;
-                  color: #fff;
-                  text-align: center;
-                  border-radius: 6px;
-                  padding: 5px 0;
-                  position: absolute;
-                  z-index: 1;
-                }
-                .tooltip:hover .tooltiptext {
-                  visibility: visible;
+                .flexelement {
+                width: 200px;
+                height: 100px;
+                text-align: center;
                 }
                 &lt;/style&gt;
                 &lt;body&gt;
-                &lt;div class=&quot;tooltip&quot;&gt;Hover over me
-                &lt;span class=&quot;tooltiptext&quot;&gt;Tooltip text&lt;/span&gt;
+                &lt;div class=&quot;flexblock&quot;&gt;
+                &lt;div class=&quot;flexelement&quot;&gt;
+                &lt;p&gt;Block&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;flexelement&quot;&gt;
+                &lt;p&gt;Block&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;flexelement&quot;&gt;
+                &lt;p&gt;Block&lt;/p&gt;
+                &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;/body&gt;
                 &lt;/html&gt;
-
-
-
 
           </code>
         </pre>

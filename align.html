@@ -28,27 +28,23 @@
                     <a class="listheading" href="#"><b>Components</b></a>
                     <ul>
                         <li><a href="Button.html">Buttons</a></li>
+                        <li><a href="cards.html">Card</a></li>
+                        <li><a href="checkbox.html">Checkbox</a></li>
                         <li><a href="dialog.html">Dialog</a></li>
                         <li><a href="field.html">Field</a></li>
-                        <li><a href="logo.html">Logo</a></li>
                         <li><a href="form.html">Forms</a></li>
-                        <li><a href="checkbox.html">Checkbox</a></li>
-                        <li><a href="cards.html">Card</a></li>
+                        <li><a href="logo.html">Logo</a></li>
                         <li><a href="radiobutton.html">Radio Button</a></li>
+                        <li><a href="toogle.html">Toogle</a></li>
                         <li><a href="tooltip.html">Tooltip</a></li>
-                        <li><a href="#">Lists</a></li>
+
                     </ul>
                 </li>
                 <li>
                     <a class="listheading" href="#"><b>Style utilities </b></a>
                     <ul>
+                        <li><a href="align.html">Align</a></li>
                         <li><a href="flexbox.html">Flexbox</a></li>
-                        <li><a href="#">Position</a></li>
-                        <li><a href="#">display</a></li>
-                        <li><a href="#">Fonts</a></li>
-                        <li><a href="#">Float</a></li>
-                        <li><a href="#">Margin and Padding</a></li>
-                        <li><a href="#">Shadow</a></li>
                     </ul>
                 </li>
             </ul>
@@ -71,53 +67,54 @@
                     <img src="images/align.png" />
                     <h2>Overview</h2>
                     <p>
-                        Tooltips are used to provide additional information or clarification about a specific element or
-                        feature in an application. They can contain text, images, or other media and are often used to
-                        explain the function of a button, link, or other UI element.
+                        "Align" in a design system refers to the positioning of elements within a design layout to
+                        create a visual balance and
+                        hierarchy. This can be done through adjusting the margins, padding, and spacing between
+                        elements, and using consistent
+                        alignments such as center, left, or right.
                     </p>
                 </div>
 
                 <div class="pageContent">
                     <h2>When to use</h2>
-                    <p>
-                        Tooltips are useful when:<br />
+
                     <ul>
-                        <li>The information being presented is short and does not require a full screen or dedicated
-                            space.</li>
-                        <li>The information is supplementary or additional to the main content.</li>
-                        <li>The user needs quick access to information about a particular element or feature.</li>
+                        <li>To create visual harmony and consistency in a design</li>
+                        <li>To direct the user's attention towards important elements</li>
+                        <li>To reinforce the hierarchy of information in a layout</li>
                     </ul>
-                    </p>
+
                 </div>
                 <div class="pageContent">
                     <h2>When not to use</h2>
-                    <p>
-                        Tooltips may not be appropriate when:<br />
+
                     <ul>
-                        <li>The information is critical or necessary to the user's understanding of the interface.</li>
-                        <li>The information is too complex or lengthy to be presented in a small tooltip.</li>
-                        <li>The user's device or environment does not support hover or click events.</li>
+                        <li>When the design needs to be more organic or free-flowing</li>
+                        <li>When the elements don't fit within the established alignments</li>
+                        <li>When the elements need to be placed in specific locations for functional reasons, such as
+                            buttons being placed in a
+                            consistent location throughout a website.</li>
                     </ul>
-                    </p>
+
                     <br />
                     <p>
-                        Overall, tooltips can be a useful design tool in the right context, but they should be used
-                        judiciously and with consideration for the user's needs and environment.
+                        It's important to use alignments in a thoughtful and intentional way to enhance the user
+                        experience, while also
+                        maintaining a cohesive and aesthetically pleasing design.
                     </p>
                 </div>
 
 
                 <div class="pageContent">
                     <h2>Live demo</h2>
-                    <p>The basic tooltip we use and the hover tooltip text position varies on the requirements</p>
-                    <div class="Livedemo">
-                        <div class="center">
-                            <div class="tooltip">
-                                <span style="color: brown;">Hover over me</span>
-                                <span class="tooltiptext">Tooltip text</span>
-                            </div>
-                        </div>
+                    <p>Some of the various types of text-alignments we use:</p>
+                    <div class="Livedemo1">
+                        <div class="left">Left aligned text</div>
+                        <div class="Center">Centered aligned text</div>
+                        <div class="right">Right aligned text</div>
                     </div>
+                    <p>Not only using text, alignment can be achieved by using flexbox, grid on images and div blocks
+                        which is not shown here.</p>
                 </div>
             </main>
             <div class="pageContent">
@@ -130,29 +127,20 @@
                 &lt;!DOCTYPE html&gt;
                 &lt;html&gt;
                 &lt;style&gt;
-                .tooltip {
-                  position: relative;
-                  display: inline-block;                 
-                }
-                .tooltip .tooltiptext {
-                  visibility: hidden;
-                  width: 120px;
-                  background-color: black;
-                  color: #fff;
-                  text-align: center;
-                  border-radius: 6px;
-                  padding: 5px 0;
-                  position: absolute;
-                  z-index: 1;
-                }
-                .tooltip:hover .tooltiptext {
-                  visibility: visible;
+                .left {
+                   text-align: left;
+                  }
+                .Center {
+                   text-align: center;
+                 }
+                 .right {
+                   text-align: right;
                 }
                 &lt;/style&gt;
                 &lt;body&gt;
-                &lt;div class=&quot;tooltip&quot;&gt;Hover over me
-                &lt;span class=&quot;tooltiptext&quot;&gt;Tooltip text&lt;/span&gt;
-                &lt;/div&gt;
+                &lt;div class=&quot;left&quot;&gt;Left aligned text&lt;/div&gt;
+                &lt;div class=&quot;Center&quot;&gt;Centered aligned text&lt;/div&gt;
+                &lt;div class=&quot;right&quot;&gt;Right aligned text&lt;/div&gt;
                 &lt;/body&gt;
                 &lt;/html&gt;
 

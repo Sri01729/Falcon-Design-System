@@ -560,3 +560,35 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* --------        --------         --------      Styling for align.html       --------       --------       --------  */
+
+/* ----------------------------- Styling of aligning the text left  ---------------------------- */
+
+.Livedemo1 {
+  display: flex;
+  height: 200px;
+  position: relative;
+  border: 1px solid black;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.left,
+.right,
+.Center {
+  margin: 10px 0px 10px 0px;
+  color: brown;
+  text-align: left;
+  border: 1px solid white;
+  padding-left: 10px;
+}
+
+.Center {
+  text-align: center;
+  width: 99%;
+}
+
+.right {
+  text-align: right;
+  padding-right: 10px;
+}
