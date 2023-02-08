@@ -1,4 +1,5 @@
 "use strict";
+/*  Search list function */
 function myFunction() {
     let input = document.getElementById("searchList").value;
         let list = document.getElementById("list");
@@ -14,9 +15,10 @@ function myFunction() {
           }
         }
 }
-  
+
+/*  Dialog function */
 function clickme() {
-  
+
   let result;
   if (confirm("Press the button of your choice")) {
     result = "You pressed ok :)";
@@ -26,9 +28,17 @@ function clickme() {
   }
   document.getElementById("demo").innerHTML = result;
 }
-
+/*  Form submit confirmation */
 function confirmMessage() {
- 
+
   alert("Your form submitted succesfully");
 
 }
+
+/*  Hamburger menu button */
+const menuToggle = document.querySelector('.icon');
+const menuContainer = document.querySelector('.menu-container');
+
+menuToggle.addEventListener('click', function() {
+  menuContainer.classList.toggle('menu-open');
+});

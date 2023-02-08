@@ -6,52 +6,59 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
 </head>
 
 <body>
+    <!-- Menu at left column -->
     <div class="container">
-        <div class="menuList">
-            <h3 class="Menu">Menu</h3>
-            <input type="text" id="searchList" onkeyup="myFunction()" placeholder="Search.." size="25" />
-            <ul id="list">
-                <li>
-                    <a class="listheading" href="#"><b>Guidelines</b></a>
-
-                    <ul>
-                        <li><a href="typography.html">Typography</a></li>
-                        <li><a href="colours.html">Colours</a></li>
-                        <li><a href="gridsystem.html">Grid System</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="listheading" href="#"><b>Components</b></a>
-                    <ul>
-                        <li><a href="Button.html">Buttons</a></li>
-                        <li><a href="cards.html">Card</a></li>
-                        <li><a href="checkbox.html">Checkbox</a></li>
-                        <li><a href="dialog.html">Dialog</a></li>
-                        <li><a href="field.html">Field</a></li>
-                        <li><a href="form.html">Forms</a></li>
-                        <li><a href="logo.html">Logo</a></li>
-                        <li><a href="radiobutton.html">Radio Button</a></li>
-                        <li><a href="toogle.html">Toogle</a></li>
-                        <li><a href="tooltip.html">Tooltip</a></li>
-
-                    </ul>
-                </li>
-                <li>
-                    <a class="listheading" href="#"><b>Style utilities </b></a>
-                    <ul>
-                        <li><a href="align.html">Align</a></li>
-                        <li><a href="flexbox.html">Flexbox</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="menu-container">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="menuList">
+                <h3 class="Menu">Menu</h3>
+                <input type="text" id="searchList" onkeyup="myFunction()" placeholder="Search.." size="25" />
+                <ul id="list">
+                    <li>
+                        <a class="listheading" href="#"><b>Guidelines</b></a>
+                        <ul>
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="colours.html">Colours</a></li>
+                            <li><a href="gridsystem.html">Grid System</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="listheading" href="#"><b>Components</b></a>
+                        <ul>
+                            <li><a href="Button.html">Buttons</a></li>
+                            <li><a href="cards.html">Card</a></li>
+                            <li><a href="checkbox.html">Checkbox</a></li>
+                            <li><a href="dialog.html">Dialog</a></li>
+                            <li><a href="field.html">Field</a></li>
+                            <li><a href="form.html">Forms</a></li>
+                            <li><a href="logo.html">Logo</a></li>
+                            <li><a href="radiobutton.html">Radio Button</a></li>
+                            <li><a href="toogle.html">Toogle</a></li>
+                            <li><a href="tooltip.html">Tooltip</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="listheading" href="#"><b>Style utilities </b></a>
+                        <ul>
+                            <li><a href="align.html" style="color: aliceblue; background-color: brown">Align</a></li>
+                            <li><a href="flexbox.html">Flexbox</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- Page Content -->
         <div class="Title">
+
+            <!--  ******************************  Header  ********************************* -->
             <header>
                 <div class="logo">
                     <a href="index.html"><img src="images/logo.png" alt="Design System Logo" width="100"
@@ -60,7 +67,7 @@
 
                 <h1>Design System</h1>
             </header>
-
+            <!--  ******************************  Main  ********************************* -->
             <main>
                 <hr />
                 <div class="pageContent">
@@ -87,7 +94,6 @@
                 </div>
                 <div class="pageContent">
                     <h2>When not to use</h2>
-
                     <ul>
                         <li>When the design needs to be more organic or free-flowing</li>
                         <li>When the elements don't fit within the established alignments</li>
@@ -95,7 +101,6 @@
                             buttons being placed in a
                             consistent location throughout a website.</li>
                     </ul>
-
                     <br />
                     <p>
                         It's important to use alignments in a thoughtful and intentional way to enhance the user
@@ -103,7 +108,6 @@
                         maintaining a cohesive and aesthetically pleasing design.
                     </p>
                 </div>
-
 
                 <div class="pageContent">
                     <h2>Live demo</h2>
@@ -116,38 +120,38 @@
                     <p>Not only using text, alignment can be achieved by using flexbox, grid on images and div blocks
                         which is not shown here.</p>
                 </div>
-            </main>
-            <div class="pageContent">
-                <h2>Code Snippet</h2>
-                <div id="codeSnippet">
-                    <pre>
-          <code>
 
 
-                &lt;!DOCTYPE html&gt;
-                &lt;html&gt;
-                &lt;style&gt;
-                .left {
-                   text-align: left;
-                  }
-                .Center {
-                   text-align: center;
-                 }
-                 .right {
-                   text-align: right;
-                }
-                &lt;/style&gt;
-                &lt;body&gt;
-                &lt;div class=&quot;left&quot;&gt;Left aligned text&lt;/div&gt;
-                &lt;div class=&quot;Center&quot;&gt;Centered aligned text&lt;/div&gt;
-                &lt;div class=&quot;right&quot;&gt;Right aligned text&lt;/div&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-
-          </code>
-        </pre>
+                <div class="pageContent">
+                    <h2>Code Snippet</h2>
+                    <div id="codeSnippet">
+                        <pre>
+                        <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;style&gt;
+                            .left {
+                            text-align: left;
+                            }
+                            .Center {
+                            text-align: center;
+                            }
+                            .right {
+                            text-align: right;
+                            }
+                            &lt;/style&gt;
+                            &lt;body&gt;
+                            &lt;div class=&quot;left&quot;&gt;Left aligned text&lt;/div&gt;
+                            &lt;div class=&quot;Center&quot;&gt;Centered aligned text&lt;/div&gt;
+                            &lt;div class=&quot;right&quot;&gt;Right aligned text&lt;/div&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                     </code>
+                </pre>
+                    </div>
                 </div>
-            </div>
+            </main>
+            <!--  ******************************  Footer  ********************************* -->
             <footer>
                 <div>
                     <p>

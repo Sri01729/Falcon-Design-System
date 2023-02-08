@@ -28,7 +28,8 @@ header {
   color: brown;
   font-family: fantasy;
   font-size: 30px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
+  margin-top: -25px;
 }
 
 h2 {
@@ -175,6 +176,8 @@ code {
 #codeSnippet {
   background-color: #000000;
   color: green;
+  display: inline-block;
+  width: 100%;
 }
 
 /* --------        --------         --------      Styling for typogrphy.html       --------       --------       --------  */
@@ -591,4 +594,115 @@ input:checked + .slider:before {
 .right {
   text-align: right;
   padding-right: 10px;
+}
+
+/*------------------------------------Media queries-------------------------------------*/
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+
+@media only screen and (max-width: 620px) {
+  html,
+  body,
+  .menu-container {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 100%;
+  }
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  header {
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo {
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+  .header-right {
+    float: none;
+  }
+  .Title {
+    width: 100%;
+  }
+  .menu-container .menuList {
+    display: none;
+  }
+  .menu-container.menu-open a.icon {
+    color: brown;
+    display: block;
+    position: absolute;
+  }
+  .icon {
+    color: brown;
+  }
+  .menu-container.menu-open .menuList {
+    display: block;
+  }
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  html,
+  body,
+  .menu-container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .header-right {
+    float: none;
+  }
+  .Title {
+    width: 100%;
+  }
+  .menu-container .menuList {
+    display: none;
+  }
+  .menu-container.menu-open a.icon {
+    color: brown;
+    display: block;
+    position: absolute;
+  }
+  .icon {
+    color: brown;
+  }
+  .menu-container.menu-open .menuList {
+    display: block;
+  }
+
+  .flexgridcontainer {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "menu main main main right right"
+      "menu footer footer footer footer footer";
+    gap: 10px;
+    background-color: #161b21;
+    padding: 10px;
+    width: 80%;
+    padding-left: 20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+  .icon {
+    visibility: hidden;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .icon {
+    visibility: hidden;
+  }
 }

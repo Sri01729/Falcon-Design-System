@@ -6,51 +6,58 @@
   <meta name="viewport" content="width=device-width" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
 </head>
 
 <body>
   <div class="container">
-    <div class="menuList">
-      <h3 class="Menu">Menu</h3>
-      <input type="text" id="searchList" onkeyup="myFunction()" placeholder="Search.." size="25" />
-      <ul id="list">
-        <li>
-          <a class="listheading" href="#"><b>Guidelines</b></a>
+    <div class="menu-container">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="menuList">
+        <h3 class="Menu">Menu</h3>
+        <input type="text" id="searchList" onkeyup="myFunction()" placeholder="Search.." size="25" />
+        <ul id="list">
+          <li>
+            <a class="listheading" href="#"><b>Guidelines</b></a>
 
-          <ul>
-            <li><a href="typography.html">Typography</a></li>
-            <li><a href="colours.html">Colours</a></li>
-            <li><a href="gridsystem.html">Grid System</a></li>
-          </ul>
-        </li>
-        <li>
-          <a class="listheading" href="#"><b>Components</b></a>
-          <ul>
-            <li><a href="Button.html">Buttons</a></li>
-            <li><a href="cards.html">Card</a></li>
-            <li><a href="checkbox.html">Checkbox</a></li>
-            <li><a href="dialog.html">Dialog</a></li>
-            <li><a href="field.html">Field</a></li>
-            <li><a href="form.html">Forms</a></li>
-            <li><a href="logo.html">Logo</a></li>
-            <li><a href="radiobutton.html">Radio Button</a></li>
-            <li><a href="toogle.html">Toogle</a></li>
-            <li><a href="tooltip.html">Tooltip</a></li>
-          </ul>
-        </li>
-        <li>
-          <a class="listheading" href="#"><b>Style utilities </b></a>
-          <ul>
-            <li><a href="align.html">Align</a></li>
-            <li><a href="flexbox.html">Flexbox</a></li>
-          </ul>
-        </li>
-      </ul>
+            <ul>
+              <li><a href="typography.html">Typography</a></li>
+              <li><a href="colours.html" style="color: aliceblue; background-color: brown">Colours</a></li>
+              <li><a href="gridsystem.html">Grid System</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="listheading" href="#"><b>Components</b></a>
+            <ul>
+              <li><a href="Button.html">Buttons</a></li>
+              <li><a href="cards.html">Card</a></li>
+              <li><a href="checkbox.html">Checkbox</a></li>
+              <li><a href="dialog.html">Dialog</a></li>
+              <li><a href="field.html">Field</a></li>
+              <li><a href="form.html">Forms</a></li>
+              <li><a href="logo.html">Logo</a></li>
+              <li><a href="radiobutton.html">Radio Button</a></li>
+              <li><a href="toogle.html">Toogle</a></li>
+              <li><a href="tooltip.html">Tooltip</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="listheading" href="#"><b>Style utilities </b></a>
+            <ul>
+              <li><a href="align.html">Align</a></li>
+              <li><a href="flexbox.html">Flexbox</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Page Content -->
     <div class="Title">
+      <!--  ******************************  Header  ********************************* -->
       <header>
         <div class="logo">
           <a href="index.html"><img src="images/logo.png" alt="Design System Logo" width="100" height="80" /></a>
@@ -58,30 +65,31 @@
 
         <h1>Design System</h1>
       </header>
-
+      <!--  ****************************** Main  ********************************* -->
       <main>
         <hr />
         <div class="pageContent">
           <img src="images/colours.png" />
-        </div>
-        <h2>Colour anatomy</h2>
-        <p style="color: aliceblue">We mainly use these primary colours:</p>
-        <div class="maincircleblock">
-          <div class="colourblock">
-            <div class="circle1"></div>
-            <p>"#a52a2a" for text headings <br />and buttons</p>
-          </div>
-          <div class="colourblock">
-            <div class="circle2"></div>
-            <p>"#f0f8ff" for text paragraphs</p>
-          </div>
-          <div class="colourblock">
-            <div class="circle3"></div>
-            <p>"#161b21" for background</p>
+
+          <h2>Colour anatomy</h2>
+          <p style="color: aliceblue">We mainly use these primary colours:</p>
+          <div class="maincircleblock">
+            <div class="colourblock">
+              <div class="circle1"></div>
+              <p>"#a52a2a" for text headings <br />and buttons</p>
+            </div>
+            <div class="colourblock">
+              <div class="circle2"></div>
+              <p>"#f0f8ff" for text paragraphs</p>
+            </div>
+            <div class="colourblock">
+              <div class="circle3"></div>
+              <p>"#161b21" for background</p>
+            </div>
           </div>
         </div>
       </main>
-
+      <!--  ******************************  Footer  ********************************* -->
       <footer>
         <div>
           <p>
