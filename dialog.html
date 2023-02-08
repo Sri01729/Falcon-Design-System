@@ -1,130 +1,126 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Design system</title>
-    <meta name="viewport" content="width=device-width" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="menuList">
-        <h3 class="Menu">Menu</h3>
-        <input
-          type="text"
-          id="searchList"
-          onkeyup="myFunction()"
-          placeholder="Search.."
-          size="25"
-        />
-        <ul id="list">
-          <li>
-            <a class="listheading" href="#"><b>Guidelines</b></a>
 
-            <ul>
-              <li><a href="typography.html">Typography</a></li>
-              <li><a href="colours.html">Colours</a></li>
-              <li><a href="gridsystem.html">Grid System</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="listheading" href="#"><b>Components</b></a>
-            <ul>
-              <li><a href="Button.html">Buttons</a></li>
-              <li><a href="dialog.html">Dialog</a></li>
-              <li><a href="field.html">Field</a></li>
-              <li><a href="logo.html">Logo</a></li>
-              <li><a href="form.html">Forms</a></li>
-              <li><a href="checkbox.html">Checkbox</a></li>
-              <li><a href="cards.html">Card</a></li>
-              <li><a href="radiobutton.html">Radio Button</a></li>
-              <li><a href="tooltip.html">Tooltip</a></li>
-              <li><a href="#">Lists</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="listheading" href="#"><b>Style utilities </b></a>
-            <ul>
-              <li><a href="#">Flexbox</a></li>
-              <li><a href="#">Position</a></li>
-              <li><a href="#">display</a></li>
-              <li><a href="#">Fonts</a></li>
-              <li><a href="#">Float</a></li>
-              <li><a href="#">Margin and Padding</a></li>
-              <li><a href="#">Shadow</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+<head>
+  <title>Design system</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
+</head>
 
-      <!-- Page Content -->
-      <div class="Title">
-        <header>
-          <div class="logo">
-            <a href="index.html"
-              ><img
-                src="images/logo.png"
-                alt="Design System Logo"
-                width="100"
-                height="80"
-            /></a>
-          </div>
+<body>
+  <div class="container">
+    <div class="menuList">
+      <h3 class="Menu">Menu</h3>
+      <input type="text" id="searchList" onkeyup="myFunction()" placeholder="Search.." size="25" />
+      <ul id="list">
+        <li>
+          <a class="listheading" href="#"><b>Guidelines</b></a>
 
-          <h1>Design System</h1>
-        </header>
+          <ul>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="colours.html">Colours</a></li>
+            <li><a href="gridsystem.html">Grid System</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="listheading" href="#"><b>Components</b></a>
+          <ul>
+            <li><a href="Button.html">Buttons</a></li>
+            <li><a href="dialog.html">Dialog</a></li>
+            <li><a href="field.html">Field</a></li>
+            <li><a href="logo.html">Logo</a></li>
+            <li><a href="form.html">Forms</a></li>
+            <li><a href="checkbox.html">Checkbox</a></li>
+            <li><a href="cards.html">Card</a></li>
+            <li><a href="radiobutton.html">Radio Button</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
+            <li><a href="toogle.html">Toogle</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="listheading" href="#"><b>Style utilities </b></a>
+          <ul>
+            <li><a href="flexbox.html">Flexbox</a></li>
+            <li><a href="#">Position</a></li>
+            <li><a href="#">display</a></li>
+            <li><a href="#">Fonts</a></li>
+            <li><a href="#">Float</a></li>
+            <li><a href="#">Margin and Padding</a></li>
+            <li><a href="#">Shadow</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-        <main>
-          <hr />
-          <div class="pageContent">
-            <img src="images/dialog.png" />
-            <h2>Overview</h2>
-            <p>
-              A dialog in a design system refers to the graphical user interface
-              (GUI) element that allows users to interact with a computer
-              program by providing information or making selections. A dialog
-              typically appears as a window that floats above the main
-              application window, and it can include various elements such as
-              text fields, buttons, drop-down menus, checkboxes, and others. The
-              purpose of a dialog in a design system is to allow users to input
-              information, make choices, or access additional functionality.
-              Dialogs are a crucial component of a design system because they
-              help to provide a consistent user experience and ensure that the
-              software is easy to use and understand.
-            </p>
-          </div>
-          <div class="pageContent">
-            <h2>When to use</h2>
-            <p>
-              <p>1. When you need to display or gather information that is not part of the main user flow, such as a confirmation prompt or a form.</p>
-              <p>2. When you need to present users with a choice that is important but not crucial to their current task, such as a preferences menu.</p>
-            </p>
-          </div>
+    <!-- Page Content -->
+    <div class="Title">
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Design System Logo" width="100" height="80" /></a>
+        </div>
 
-          <div class="pageContent">
-            <h2>When not to use</h2>
-            <p>
-              <p>1. When the information is critical to the user's current task and needs to be always visible, such as an error message or a progress bar.</p>
-              <p>2. When the information is redundant or could be presented in a simpler, more direct way, such as a tooltip.</p>
-            </p>
-            <br>
-            <p>Remember to always prioritize clear and concise user communication and to only use dialogs when necessary to avoid overloading the user with information.</p>
-          </div>
+        <h1>Design System</h1>
+      </header>
 
-          <div class="pageContent">
-            <h2>Live demo</h2>
-            <div class="Livedemo">
-              <div class="center">
-                <button class="btn" onclick="clickme()">Click me</button>
-                <p id="demo"></p>
-              </div>
+      <main>
+        <hr />
+        <div class="pageContent">
+          <img src="images/dialog.png" />
+          <h2>Overview</h2>
+          <p>
+            A dialog in a design system refers to the graphical user interface
+            (GUI) element that allows users to interact with a computer
+            program by providing information or making selections. A dialog
+            typically appears as a window that floats above the main
+            application window, and it can include various elements such as
+            text fields, buttons, drop-down menus, checkboxes, and others. The
+            purpose of a dialog in a design system is to allow users to input
+            information, make choices, or access additional functionality.
+            Dialogs are a crucial component of a design system because they
+            help to provide a consistent user experience and ensure that the
+            software is easy to use and understand.
+          </p>
+        </div>
+        <div class="pageContent">
+          <h2>When to use</h2>
+          <p>
+          <p>1. When you need to display or gather information that is not part of the main user flow, such as a
+            confirmation prompt or a form.</p>
+          <p>2. When you need to present users with a choice that is important but not crucial to their current task,
+            such as a preferences menu.</p>
+          </p>
+        </div>
+
+        <div class="pageContent">
+          <h2>When not to use</h2>
+          <p>
+          <p>1. When the information is critical to the user's current task and needs to be always visible, such as an
+            error message or a progress bar.</p>
+          <p>2. When the information is redundant or could be presented in a simpler, more direct way, such as a
+            tooltip.</p>
+          </p>
+          <br>
+          <p>Remember to always prioritize clear and concise user communication and to only use dialogs when necessary
+            to avoid overloading the user with information.</p>
+        </div>
+
+        <div class="pageContent">
+          <h2>Live demo</h2>
+          <p>This is the dialog alert we use in our design system</p>
+          <div class="Livedemo">
+            <div class="center">
+              <button class="btn" onclick="clickme()">Click me</button>
+              <p id="demo"></p>
             </div>
           </div>
-        </main>
-        <div class="pageContent">
-          <h2>Code Snippet</h2>
-          <div id="codeSnippet">
-            <pre>
+        </div>
+      </main>
+      <div class="pageContent">
+        <h2>Code Snippet</h2>
+        <div id="codeSnippet">
+          <pre>
           <code>
 
             &lt;!DOCTYPE html&gt;
@@ -148,21 +144,20 @@
 
           </code>
         </pre>
-          </div>
         </div>
-        <footer>
-          <div>
-            <p>
-              <span>&copy;</span>
-              <i
-                >Copyright by SAI SRINIVAS ALAHARI, 2023. All rights
-                reserved.</i
-              >
-            </p>
-          </div>
-        </footer>
       </div>
+      <footer>
+        <div>
+          <p>
+            <span>&copy;</span>
+            <i>Copyright by SAI SRINIVAS ALAHARI, 2023. All rights
+              reserved.</i>
+          </p>
+        </div>
+      </footer>
     </div>
-    <script src="Javascript/appp.js"></script>
-  </body>
+  </div>
+  <script src="Javascript/appp.js"></script>
+</body>
+
 </html>

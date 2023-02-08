@@ -1,186 +1,150 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Design system</title>
-    <meta name="viewport" content="width=device-width" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="menuList">
-        <h3 class="Menu">Menu</h3>
-        <input
-          type="text"
-          id="searchList"
-          onkeyup="myFunction()"
-          placeholder="Search.."
-          size="25"
-        />
-        <ul id="list">
-          <li>
-            <a class="listheading" href="#"><b>Guidelines</b></a>
 
-            <ul>
-              <li><a href="typography.html">Typography</a></li>
-              <li><a href="colours.html">Colours</a></li>
-              <li><a href="gridsystem.html">Grid System</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="listheading" href="#"><b>Components</b></a>
-            <ul>
-              <li><a href="Button.html">Buttons</a></li>
-              <li><a href="dialog.html">Dialog</a></li>
-              <li><a href="field.html">Field</a></li>
-              <li><a href="logo.html">Logo</a></li>
-              <li><a href="form.html">Forms</a></li>
-              <li><a href="checkbox.html">Checkbox</a></li>
-              <li><a href="cards.html">Card</a></li>
-              <li><a href="radiobutton.html">Radio Button</a></li>
-              <li><a href="tooltip.html">Tooltip</a></li>
-              <li><a href="#">Lists</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="listheading" href="#"><b>Style utilities </b></a>
-            <ul>
-              <li><a href="#">Flexbox</a></li>
-              <li><a href="#">Position</a></li>
-              <li><a href="#">display</a></li>
-              <li><a href="#">Fonts</a></li>
-              <li><a href="#">Float</a></li>
-              <li><a href="#">Margin and Padding</a></li>
-              <li><a href="#">Shadow</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+<head>
+  <title>Design system</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
+</head>
 
-      <!-- Page Content -->
-      <div class="Title">
-        <header>
-          <div class="logo">
-            <a href="index.html"
-              ><img
-                src="images/logo.png"
-                alt="Design System Logo"
-                width="100"
-                height="80"
-            /></a>
-          </div>
+<body>
+  <div class="container">
+    <div class="menuList">
+      <h3 class="Menu">Menu</h3>
+      <input type="text" id="searchList" onkeyup="myFunction()" placeholder="Search.." size="25" />
+      <ul id="list">
+        <li>
+          <a class="listheading" href="#"><b>Guidelines</b></a>
 
-          <h1>Design System</h1>
-        </header>
-
-        <main>
-          <hr />
-          <div class="pageContent">
-            <img src="images/Typography.png" />
-          </div>
-          <div class="mainblock">
-            <div class="block">
-              <h2>Typeface</h2>
-              <hr />
-              <p>Sans-serif</p>
-            </div>
-            <div class="block">
-              <h2>Weight</h2>
-              <hr />
-              <p>
-                <span style="font-weight: lighter">"Regular"</span>,
-                <span style="font-weight: bold">"SemiBold"</span> and
-                <span style="font-weight: bolder">"Bold"</span>
-              </p>
-            </div>
-          </div>
-          <div class="pageContent">
-            <h2>Sans-serif</h2>
-            <p>
-              <span class="xxs"
-                ><span style="font-weight: lighter">This is xxs text</span
-                >.<span style="font-weight: bold">
-                  This is xxs semibold text</span
-                >.
-                <span style="font-weight: bolder">This is xxs bold text.</span>
-              </span>
-            </p>
-            <p>
-              <span class="xs"
-                ><span style="font-weight: lighter">This is xs text</span>.<span
-                  style="font-weight: bold"
-                >
-                  This is xs semibold text</span
-                >.
-                <span style="font-weight: bolder">This is xs bold text.</span>
-              </span>
-            </p>
-            <p>
-              <span class="sm"
-                ><span style="font-weight: lighter">This is sm text</span>.<span
-                  style="font-weight: bold"
-                >
-                  This is sm semibold text</span
-                >.
-                <span style="font-weight: bolder">This is sm bold text.</span>
-              </span>
-            </p>
-            <p>
-              <span class="md"
-                ><span style="font-weight: lighter">This is md text</span>.<span
-                  style="font-weight: bold"
-                >
-                  This is md semibold text</span
-                >.
-                <span style="font-weight: bolder">This is md bold text.</span>
-              </span>
-            </p>
-            <p>
-              <span class="lg"
-                ><span style="font-weight: lighter">This is lg text</span>.<span
-                  style="font-weight: bold"
-                >
-                  This is lg semibold text</span
-                >.
-                <span style="font-weight: bolder">This is lg bold text.</span>
-              </span>
-            </p>
-            <p>
-              <span class="xl"
-                ><span style="font-weight: lighter">This is xl text</span>.<span
-                  style="font-weight: bold"
-                >
-                  This is xl semibold text</span
-                >.
-                <span style="font-weight: bolder">This is xl bold text.</span>
-              </span>
-            </p>
-            <p>
-              <span class="xxl"
-                ><span style="font-weight: lighter">This is xxl text</span
-                >.<span style="font-weight: bold">
-                  This is xxl semibold text</span
-                >.
-                <span style="font-weight: bolder">This is xxl bold text.</span>
-              </span>
-            </p>
-          </div>
-        </main>
-
-        <footer>
-          <div>
-            <p>
-              <span>&copy;</span
-              ><i
-                >Copyright by SAI SRINIVAS ALAHARI, 2023. All rights
-                reserved.</i
-              >
-            </p>
-          </div>
-        </footer>
-      </div>
+          <ul>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="colours.html">Colours</a></li>
+            <li><a href="gridsystem.html">Grid System</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="listheading" href="#"><b>Components</b></a>
+          <ul>
+            <li><a href="Button.html">Buttons</a></li>
+            <li><a href="dialog.html">Dialog</a></li>
+            <li><a href="field.html">Field</a></li>
+            <li><a href="logo.html">Logo</a></li>
+            <li><a href="form.html">Forms</a></li>
+            <li><a href="checkbox.html">Checkbox</a></li>
+            <li><a href="cards.html">Card</a></li>
+            <li><a href="radiobutton.html">Radio Button</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
+            <li><a href="toogle.html">Toogle</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="listheading" href="#"><b>Style utilities </b></a>
+          <ul>
+            <li><a href="flexbox.html">Flexbox</a></li>
+            <li><a href="#">Position</a></li>
+            <li><a href="#">display</a></li>
+            <li><a href="#">Fonts</a></li>
+            <li><a href="#">Float</a></li>
+            <li><a href="#">Margin and Padding</a></li>
+            <li><a href="#">Shadow</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    <script src="Javascript/appp.js"></script>
-  </body>
+
+    <!-- Page Content -->
+    <div class="Title">
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Design System Logo" width="100" height="80" /></a>
+        </div>
+
+        <h1>Design System</h1>
+      </header>
+
+      <main>
+        <hr />
+        <div class="pageContent">
+          <img src="images/Typography.png" />
+        </div>
+        <div class="mainblock">
+          <div class="block">
+            <h2>Typeface</h2>
+            <hr />
+            <p>Sans-serif</p>
+          </div>
+          <div class="block">
+            <h2>Weight</h2>
+            <hr />
+            <p>
+              <span style="font-weight: lighter">"Regular"</span>,
+              <span style="font-weight: bold">"SemiBold"</span> and
+              <span style="font-weight: bolder">"Bold"</span>
+            </p>
+          </div>
+        </div>
+        <div class="pageContent">
+          <h2>Sans-serif</h2>
+          <p>
+            <span class="xxs"><span style="font-weight: lighter">This is xxs text</span>.<span
+                style="font-weight: bold">
+                This is xxs semibold text</span>.
+              <span style="font-weight: bolder">This is xxs bold text.</span>
+            </span>
+          </p>
+          <p>
+            <span class="xs"><span style="font-weight: lighter">This is xs text</span>.<span style="font-weight: bold">
+                This is xs semibold text</span>.
+              <span style="font-weight: bolder">This is xs bold text.</span>
+            </span>
+          </p>
+          <p>
+            <span class="sm"><span style="font-weight: lighter">This is sm text</span>.<span style="font-weight: bold">
+                This is sm semibold text</span>.
+              <span style="font-weight: bolder">This is sm bold text.</span>
+            </span>
+          </p>
+          <p>
+            <span class="md"><span style="font-weight: lighter">This is md text</span>.<span style="font-weight: bold">
+                This is md semibold text</span>.
+              <span style="font-weight: bolder">This is md bold text.</span>
+            </span>
+          </p>
+          <p>
+            <span class="lg"><span style="font-weight: lighter">This is lg text</span>.<span style="font-weight: bold">
+                This is lg semibold text</span>.
+              <span style="font-weight: bolder">This is lg bold text.</span>
+            </span>
+          </p>
+          <p>
+            <span class="xl"><span style="font-weight: lighter">This is xl text</span>.<span style="font-weight: bold">
+                This is xl semibold text</span>.
+              <span style="font-weight: bolder">This is xl bold text.</span>
+            </span>
+          </p>
+          <p>
+            <span class="xxl"><span style="font-weight: lighter">This is xxl text</span>.<span
+                style="font-weight: bold">
+                This is xxl semibold text</span>.
+              <span style="font-weight: bolder">This is xxl bold text.</span>
+            </span>
+          </p>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <p>
+            <span>&copy;</span><i>Copyright by SAI SRINIVAS ALAHARI, 2023. All rights
+              reserved.</i>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="Javascript/appp.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Design system</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="menuList">
+      <h3 class="Menu">Menu</h3>
+      <input type="text" id="searchList" onkeyup="myFunction()" placeholder="Search.." size="25" />
+      <ul id="list">
+        <li>
+          <a class="listheading" href="#"><b>Guidelines</b></a>
+
+          <ul>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="colours.html">Colours</a></li>
+            <li><a href="gridsystem.html">Grid System</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="listheading" href="#"><b>Components</b></a>
+          <ul>
+            <li><a href="Button.html">Buttons</a></li>
+            <li><a href="dialog.html">Dialog</a></li>
+            <li><a href="field.html">Field</a></li>
+            <li><a href="logo.html">Logo</a></li>
+            <li><a href="form.html">Forms</a></li>
+            <li><a href="checkbox.html">Checkbox</a></li>
+            <li><a href="cards.html">Card</a></li>
+            <li><a href="radiobutton.html">Radio Button</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
+            <li><a href="toogle.html">Toogle</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="listheading" href="#"><b>Style utilities </b></a>
+          <ul>
+            <li><a href="flexbox.html">Flexbox</a></li>
+            <li><a href="#">Position</a></li>
+            <li><a href="#">display</a></li>
+            <li><a href="#">Fonts</a></li>
+            <li><a href="#">Float</a></li>
+            <li><a href="#">Margin and Padding</a></li>
+            <li><a href="#">Shadow</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Page Content -->
+    <div class="Title">
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Design System Logo" width="100" height="80" /></a>
+        </div>
+
+        <h1>Design System</h1>
+      </header>
+
+      <main>
+        <hr />
+        <div class="pageContent">
+          <img src="images/flexbox.png" />
+          <h2>Overview</h2>
+          <p>
+            Flexbox works by defining a parent container as a flex container and its direct children as flex items. The
+            layout of
+            the flex items can then be controlled using CSS properties such as flex-direction, justify-content, and
+            align-items.
+            Flexbox is particularly useful for creating flexible, responsive layouts that can adapt to different screen
+            sizes and
+            devices.
+          </p>
+        </div>
+
+        <div class="pageContent">
+          <h2>When to use</h2>
+          <p>
+            Flexbox is a good choice when:<br />
+          <ul>
+            <li>You want to arrange elements in a row or column.</li>
+            <li>You need to control the size and position of elements based on the available space.</li>
+            <li>You need to create responsive layouts that adjust to different screen sizes.</li>
+          </ul>
+          </p>
+        </div>
+        <div class="pageContent">
+          <h2>When not to use</h2>
+          <p>
+            Flexbox may not be appropriate when:<br />
+          <ul>
+            <li>You need to create complex, multi-dimensional layouts.</li>
+            <li>You need to support older browsers that do not have full support for Flexbox.</li>
+          </ul>
+          </p>
+          <br />
+          <p>
+            Overall,Using Flexbox, we can easily control the placement of these elements and ensure they take up the
+            full width of the
+            container while maintaining a defined height.
+          </p>
+        </div>
+
+
+        <div class="pageContent">
+          <h2>Live demo</h2>
+          <p>Some of the flexbox types we use:</p>
+          <p style="color: aliceblue">Flexbox (Size 1 of 1):</p>
+          <div class="flexblock">
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+          </div>
+
+          <p style="color: aliceblue">Flexbox (Size 1 of 2):</p>
+          <div class="flexblock">
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+          </div>
+
+          <p style="color: aliceblue">Flexbox (Size 1 of 3):</p>
+          <div class="flexblock">
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+          </div>
+
+          <p style="color: aliceblue">Flexbox (Size 1 of 7):</p>
+          <div class="flexblock">
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+            <div class="flexelement">
+              <p>Block</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="pageContent">
+        <h2>Code Snippet</h2>
+        <div id="codeSnippet">
+          <pre>
+          <code>
+
+
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+                .tooltip {
+                  position: relative;
+                  display: inline-block;                 
+                }
+                .tooltip .tooltiptext {
+                  visibility: hidden;
+                  width: 120px;
+                  background-color: black;
+                  color: #fff;
+                  text-align: center;
+                  border-radius: 6px;
+                  padding: 5px 0;
+                  position: absolute;
+                  z-index: 1;
+                }
+                .tooltip:hover .tooltiptext {
+                  visibility: visible;
+                }
+                &lt;/style&gt;
+                &lt;body&gt;
+                &lt;div class=&quot;tooltip&quot;&gt;Hover over me
+                &lt;span class=&quot;tooltiptext&quot;&gt;Tooltip text&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+
+
+
+
+          </code>
+        </pre>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <p>
+            <span>&copy;</span>
+            <i>Copyright by SAI SRINIVAS ALAHARI, 2023. All rights
+              reserved.</i>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="Javascript/appp.js"></script>
+</body>
+
+</html>

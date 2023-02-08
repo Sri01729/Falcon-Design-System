@@ -1,149 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Design system</title>
-    <meta name="viewport" content="width=device-width" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="menuList">
-        <h3 class="Menu">Menu</h3>
-        <input
-          type="text"
-          id="searchList"
-          onkeyup="myFunction()"
-          placeholder="Search.."
-          size="25"
-        />
-        <ul id="list">
-          <li>
-            <a class="listheading" href="#"><b>Guidelines</b></a>
 
-            <ul>
-              <li><a href="typography.html">Typography</a></li>
-              <li><a href="colours.html">Colours</a></li>
-              <li><a href="gridsystem.html">Grid System</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="listheading" href="#"><b>Components</b></a>
-            <ul>
-              <li><a href="Button.html">Buttons</a></li>
-              <li><a href="dialog.html">Dialog</a></li>
-              <li><a href="field.html">Field</a></li>
-              <li><a href="logo.html">Logo</a></li>
-              <li><a href="form.html">Forms</a></li>
-              <li><a href="checkbox.html">Checkbox</a></li>
-              <li><a href="cards.html">Card</a></li>
-              <li><a href="radiobutton.html">Radio Button</a></li>
-              <li><a href="tooltip.html">Tooltip</a></li>
-              <li><a href="#">Lists</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="listheading" href="#"><b>Style utilities </b></a>
-            <ul>
-              <li><a href="#">Flexbox</a></li>
-              <li><a href="#">Position</a></li>
-              <li><a href="#">display</a></li>
-              <li><a href="#">Fonts</a></li>
-              <li><a href="#">Float</a></li>
-              <li><a href="#">Margin and Padding</a></li>
-              <li><a href="#">Shadow</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+<head>
+  <title>Design system</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
+</head>
 
-      <!-- Page Content -->
-      <div class="Title">
-        <header>
-          <div class="logo">
-            <a href="index.html"
-              ><img
-                src="images/logo.png"
-                alt="Design System Logo"
-                width="100"
-                height="80"
-            /></a>
-          </div>
+<body>
+  <div class="container">
+    <div class="menuList">
+      <h3 class="Menu">Menu</h3>
+      <input type="text" id="searchList" onkeyup="myFunction()" placeholder="Search.." size="25" />
+      <ul id="list">
+        <li>
+          <a class="listheading" href="#"><b>Guidelines</b></a>
 
-          <h1>Design System</h1>
-        </header>
+          <ul>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="colours.html">Colours</a></li>
+            <li><a href="gridsystem.html">Grid System</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="listheading" href="#"><b>Components</b></a>
+          <ul>
+            <li><a href="Button.html">Buttons</a></li>
+            <li><a href="dialog.html">Dialog</a></li>
+            <li><a href="field.html">Field</a></li>
+            <li><a href="logo.html">Logo</a></li>
+            <li><a href="form.html">Forms</a></li>
+            <li><a href="checkbox.html">Checkbox</a></li>
+            <li><a href="cards.html">Card</a></li>
+            <li><a href="radiobutton.html">Radio Button</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
+            <li><a href="toogle.html">Toogle</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="listheading" href="#"><b>Style utilities </b></a>
+          <ul>
+            <li><a href="flexbox.html">Flexbox</a></li>
+            <li><a href="#">Position</a></li>
+            <li><a href="#">display</a></li>
+            <li><a href="#">Fonts</a></li>
+            <li><a href="#">Float</a></li>
+            <li><a href="#">Margin and Padding</a></li>
+            <li><a href="#">Shadow</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-        <main>
-          <hr />
-          <div class="pageContent">
-            <img src="images/checkbox.png" />
-            <h2>Overview</h2>
-            <p>
-              In a design system, checkboxes are used as a way to allow users to
-              indicate a binary choice or multiple choices. Some common examples
-              include selecting preferences, acknowledging terms and conditions,
-              or marking items as complete.
-            </p>
-          </div>
-          <div class="pageContent">
-            <h2>When to use</h2>
-            <p>
-              When you need to allow users to select multiple options from a set
-              of choice, only if the choices are independent and do not affect
-              each other And also When the number of options are low.
-            </p>
-          </div>
-          <div class="pageContent">
-            <h2>When not to use</h2>
-            <p>
-              When you need users to enter a numerical value and if the options
-              are not independent and affect each other then use radio buttons.
-              Also if the number of options is large, consider using a drop-down
-              menu or a select component.
-            </p>
-            <br />
-            <p>
-              It's important to consider accessibility when using checkboxes,
-              ensure that their purpose and state are clear to all users,
-              including those using assistive technology.
-            </p>
-          </div>
+    <!-- Page Content -->
+    <div class="Title">
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Design System Logo" width="100" height="80" /></a>
+        </div>
 
-          <div class="pageContent">
-            <h2>Live demo</h2>
-            <div class="Livedemo">
-              <div class="center">
-                <p>Select the languages you want to learn</p>
-                <input
-                  type="checkbox"
-                  id="java"
-                  name="language1"
-                  value="Java"
-                />
-                <label for="language1">Java</label><br />
-                <input
-                  type="checkbox"
-                  id="python"
-                  name="language2"
-                  value="python"
-                />
-                <label for="language2">Python</label><br />
-                <input
-                  type="checkbox"
-                  id="Javascript"
-                  name="language3"
-                  value="Javascript"
-                />
-                <label for="language3">Javascript</label><br /><br />
-              </div>
+        <h1>Design System</h1>
+      </header>
+
+      <main>
+        <hr />
+        <div class="pageContent">
+          <img src="images/checkbox.png" />
+          <h2>Overview</h2>
+          <p>
+            In a design system, checkboxes are used as a way to allow users to
+            indicate a binary choice or multiple choices. Some common examples
+            include selecting preferences, acknowledging terms and conditions,
+            or marking items as complete.
+          </p>
+        </div>
+        <div class="pageContent">
+          <h2>When to use</h2>
+          <p>
+            When you need to allow users to select multiple options from a set
+            of choice, only if the choices are independent and do not affect
+            each other And also When the number of options are low.
+          </p>
+        </div>
+        <div class="pageContent">
+          <h2>When not to use</h2>
+          <p>
+            When you need users to enter a numerical value and if the options
+            are not independent and affect each other then use radio buttons.
+            Also if the number of options is large, consider using a drop-down
+            menu or a select component.
+          </p>
+          <br />
+          <p>
+            It's important to consider accessibility when using checkboxes,
+            ensure that their purpose and state are clear to all users,
+            including those using assistive technology.
+          </p>
+        </div>
+
+        <div class="pageContent">
+          <h2>Live demo</h2>
+          <p>The general checkbox we use:</p>
+          <div class="Livedemo">
+            <div class="center">
+              <p>Select the languages you want to learn</p>
+              <input type="checkbox" id="java" name="language1" value="Java" />
+              <label for="language1">Java</label><br />
+              <input type="checkbox" id="python" name="language2" value="python" />
+              <label for="language2">Python</label><br />
+              <input type="checkbox" id="Javascript" name="language3" value="Javascript" />
+              <label for="language3">Javascript</label><br /><br />
             </div>
           </div>
-        </main>
-        <div class="pageContent">
-          <h2>Code Snippet</h2>
-          <div id="codeSnippet">
-            <pre>
+        </div>
+      </main>
+      <div class="pageContent">
+        <h2>Code Snippet</h2>
+        <div id="codeSnippet">
+          <pre>
           <code>
 
             &lt;!DOCTYPE html&gt;
@@ -163,21 +139,20 @@
 
           </code>
         </pre>
-          </div>
         </div>
-        <footer>
-          <div>
-            <p>
-              <span>&copy;</span>
-              <i
-                >Copyright by SAI SRINIVAS ALAHARI, 2023. All rights
-                reserved.</i
-              >
-            </p>
-          </div>
-        </footer>
       </div>
+      <footer>
+        <div>
+          <p>
+            <span>&copy;</span>
+            <i>Copyright by SAI SRINIVAS ALAHARI, 2023. All rights
+              reserved.</i>
+          </p>
+        </div>
+      </footer>
     </div>
-    <script src="Javascript/appp.js"></script>
-  </body>
+  </div>
+  <script src="Javascript/appp.js"></script>
+</body>
+
 </html>

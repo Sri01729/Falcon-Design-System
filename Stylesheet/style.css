@@ -267,15 +267,16 @@ code {
 
 /* ----------------------------- Grid felxbox styling ---------------------------- */
 
-.gridblock {
+.flexblock {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   justify-content: space-around;
   margin: 20px;
   border: 5px solid brown;
 }
 
-.gridelement {
+.flexelement {
   width: 200px;
   height: 100px;
   border: 3px solid brown;
@@ -283,12 +284,111 @@ code {
   text-align: center;
 }
 
-.gridelement p {
+.flexelement p {
   margin-top: 35px;
 }
 
-.gridelement:hover {
+.flexelement:hover {
   background-color: brown; /* Grid element hover effect */
+}
+
+/* ----------------------------- fixed grid styling ---------------------------- */
+.fixedgridcontainer {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid brown;
+}
+
+.fixedrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fixedcol {
+  width: 33.33%;
+  padding: 10px;
+  border: 3px solid brown;
+}
+
+/* ----------------------------- Responsive grid styling ---------------------------- */
+
+.rescontainer {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid brown;
+}
+
+.resrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rescol {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid brown;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    width: 33.33%;
+  }
+}
+
+/* ----------------------------- Flexbox grid styling ---------------------------- */
+
+.flexcontainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 5px solid brown;
+}
+
+.flexcol {
+  width: 33.33%;
+  padding: 30px;
+  border: 3px solid brown;
+}
+
+/* ----------------------------- using grid styling ---------------------------- */
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.flexgridcontainer {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+  gap: 10px;
+  background-color: #161b21;
+  padding: 10px;
+  width: 80%;
+  padding-left: 110px;
+}
+
+.flexgridcontainer div {
+  background-color: brown;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  font-size: larger;
 }
 
 /* --------        --------         --------      Styling for form.html       --------       --------       --------  */
@@ -396,4 +496,67 @@ form {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+/* --------        --------         --------      Styling for toogle.html       --------       --------       --------  */
+
+/* ----------------------------- Toogle switch styling ---------------------------- */
+
+.slidercontainer {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slidercontainer input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: brown;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px; /* Rounded sliders */
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

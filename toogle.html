@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Design system</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="Stylesheet/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="menuList">
+      <h3 class="Menu">Menu</h3>
+      <input type="text" id="searchList" onkeyup="myFunction()" placeholder="Search.." size="25" />
+      <ul id="list">
+        <li>
+          <a class="listheading" href="#"><b>Guidelines</b></a>
+
+          <ul>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="colours.html">Colours</a></li>
+            <li><a href="gridsystem.html">Grid System</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="listheading" href="#"><b>Components</b></a>
+          <ul>
+            <li><a href="Button.html">Buttons</a></li>
+            <li><a href="dialog.html">Dialog</a></li>
+            <li><a href="field.html">Field</a></li>
+            <li><a href="logo.html">Logo</a></li>
+            <li><a href="form.html">Forms</a></li>
+            <li><a href="checkbox.html">Checkbox</a></li>
+            <li><a href="cards.html">Card</a></li>
+            <li><a href="radiobutton.html">Radio Button</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
+            <li><a href="toogle.html">Toogle</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="listheading" href="#"><b>Style utilities </b></a>
+          <ul>
+            <li><a href="flexbox.html">Flexbox</a></li>
+            <li><a href="#">Position</a></li>
+            <li><a href="#">display</a></li>
+            <li><a href="#">Fonts</a></li>
+            <li><a href="#">Float</a></li>
+            <li><a href="#">Margin and Padding</a></li>
+            <li><a href="#">Shadow</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Page Content -->
+    <div class="Title">
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Design System Logo" width="100" height="80" /></a>
+        </div>
+
+        <h1>Design System</h1>
+      </header>
+
+      <main>
+        <hr />
+        <div class="pageContent">
+          <img src="images/toogle.png" />
+          <h2>Overview</h2>
+          <p>
+            Toggles are used in design systems to enable users to swiftly flip between two states. They are frequently
+            used to choose
+            between two alternatives or to turn features or settings on or off.</p>
+        </div>
+
+        <div class="pageContent">
+          <h2>When to use</h2>
+          <p>
+            Toogle's are useful:<br />
+          <ul>
+            <li>When you must make it simple and quick for consumers to convert between two states.</li>
+            <li>When the option is binary, such as true/false or on/off.</li>
+            <li>When the toggle's status is immediately obvious, like when on and off are represented by distinct
+              colours.</li>
+          </ul>
+          </p>
+        </div>
+        <div class="pageContent">
+          <h2>When not to use</h2>
+          <p>
+            Toogle's may not be appropriate in this situations<br />
+          <ul>
+            <li>Use checkboxes or radio buttons if there are more than two alternatives available.</li>
+            <li>Use a drop-down menu or a select component when the option needs extra explanation.</li>
+            <li>The user's device or environment does not support hover or click events.</li>
+          </ul>
+          </p>
+          <br />
+          <p>
+            When utilizing toggles, it's crucial to take accessibility into account and make sure that everyone can
+            understand their
+            function and condition, including users of assistive technology.</p>
+        </div>
+
+
+        <div class="pageContent">
+          <h2>Live demo</h2>
+          <div class="Livedemo">
+            <div class="center">
+              <label class="slidercontainer">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="pageContent">
+        <h2>Code Snippet</h2>
+        <div id="codeSnippet">
+          <pre>
+          <code>
+
+
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+                .switch {
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 34px;
+                }
+                
+                .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+                }
+                
+                .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+                }
+                
+                .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+                }
+                
+                input:checked + .slider {
+                background-color: brown;
+                }
+                
+                input:focus + .slider {
+                box-shadow: 0 0 1px #2196F3;
+                }
+                
+                input:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
+                }
+                
+                .slider.round {
+                border-radius: 34px;
+                }
+                
+                .slider.round:before {
+                border-radius: 50%;
+                }
+                &lt;/style&gt;
+                &lt;body&gt;
+                &lt;label class=&quot;switch&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;
+                &lt;span class=&quot;slider round&quot;&gt;&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+
+
+
+
+          </code>
+        </pre>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <p>
+            <span>&copy;</span>
+            <i>Copyright by SAI SRINIVAS ALAHARI, 2023. All rights
+              reserved.</i>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="Javascript/appp.js"></script>
+</body>
+
+</html>
