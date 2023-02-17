@@ -23,11 +23,14 @@
                 <ul id="list">
                     <li>
                         <a class="listheading" href="#"><b>Guidelines</b></a>
+
                         <ul>
                             <li><a href="typography.html">Typography</a></li>
                             <li><a href="colours.html">Colours</a></li>
                             <li><a href="gridsystem.html">Grid System</a></li>
                             <li><a href="spacing.html">Spacing</a></li>
+
+
                         </ul>
                     </li>
                     <li>
@@ -35,11 +38,14 @@
                         <ul>
                             <li><a href="Button.html">Buttons</a></li>
                             <li><a href="cards.html">Card</a></li>
-                            <li><a href="checkbox.html">Checkbox</a></li>
+                            <li><a href="checkbox.html">Checkbox</a>
+                            </li>
                             <li><a href="dialog.html">Dialog</a></li>
                             <li><a href="field.html">Field</a></li>
                             <li><a href="form.html">Forms</a></li>
                             <li><a href="logo.html">Logo</a></li>
+                            <li><a href="listgroup.html" style="color: aliceblue; background-color: red">List group</a>
+                            </li>
                             <li><a href="radiobutton.html">Radio Button</a></li>
                             <li><a href="toogle.html">Toogle</a></li>
                             <li><a href="tooltip.html">Tooltip</a></li>
@@ -48,18 +54,16 @@
                     <li>
                         <a class="listheading" href="#"><b>Style utilities </b></a>
                         <ul>
-                            <li><a href="align.html" style="color: aliceblue; background-color: red">Align</a></li>
+                            <li><a href="align.html">Align</a></li>
                             <li><a href="flexbox.html">Flexbox</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
-
         <!-- Page Content -->
+        <!--  ******************************  Header  ********************************* -->
         <div class="Title">
-
-            <!--  ******************************  Header  ********************************* -->
             <header>
                 <div class="logo">
                     <a href="index.html"><img src="images/logo.png" alt="Design System Logo" width="100"
@@ -72,66 +76,93 @@
             <main>
                 <hr />
                 <div class="pageContent">
-                    <img src="images/align.png" />
+                    <img src="images/listgroup.png" />
                     <h2>Overview</h2>
                     <p>
-                        "Align" in a design system refers to the positioning of elements within a design layout to
-                        create a visual balance and
-                        hierarchy. This can be done through adjusting the margins, padding, and spacing between
-                        elements, and using consistent
-                        alignments such as center, left, or right.
+                        In design systems, lists are commonly used to present information in a structured way, whether
+                        it's a simple list of
+                        items or a more complex hierarchy of information. Lists can be useful in a variety of contexts,
+                        such as navigation menus, product features, and content sections, as they
+                        can help to break up large blocks of text and make it easier for users to scan and find the
+                        information they need.
                     </p>
                 </div>
-
                 <div class="pageContent">
                     <h2>When to use</h2>
-
-                    <ul>
-                        <li>To create visual harmony and consistency in a design</li>
-                        <li>To direct the user's attention towards important elements</li>
-                        <li>To reinforce the hierarchy of information in a layout</li>
-                    </ul>
-
+                    <p>
+                        When using lists in a design system, it's important to ensure that they are consistent in terms
+                        of formatting, spacing,
+                        and typography, and that they follow a clear hierarchy to make the content more scannable. It's
+                        also important to
+                        consider the accessibility of lists, such as ensuring that they can be navigated using keyboard
+                        controls.
+                    </p>
                 </div>
                 <div class="pageContent">
                     <h2>When not to use</h2>
-                    <ul>
-                        <li>When the design needs to be more organic or free-flowing</li>
-                        <li>When the elements don't fit within the established alignments</li>
-                        <li>When the elements need to be placed in specific locations for functional reasons, such as
-                            buttons being placed in a
-                            consistent location throughout a website.</li>
-                    </ul>
-                    <br />
                     <p>
-                        It's important to use alignments in a thoughtful and intentional way to enhance the user
-                        experience, while also
-                        maintaining a cohesive and aesthetically pleasing design.
+                        However, lists may not always be the best option for presenting information, particularly if the
+                        content is complex or
+                        requires more detailed explanations. In such cases, alternative formats such as tables or
+                        interactive visualizations may
+                        be more appropriate.
                     </p>
                 </div>
 
                 <div class="pageContent">
                     <h2>Live demo</h2>
-                    <p>Some of the various types of text-alignments we use:</p>
-                    <div class="Livedemo1">
-                        <div class="left">Left aligned text</div>
-                        <div class="Center">Centered aligned text</div>
-                        <div class="right">Right aligned text</div>
+                    <p>The two types of list are:</p>
+                    <div class="Livedemo">
+                        <div class="center">
+                            <p>Ordered list</p>
+                            <ol>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ol>
+                        </div>
                     </div>
-                    <p>Not only using text, alignment can be achieved by using flexbox, grid on images and div blocks
-                        which is not shown here.</p>
                 </div>
-
+                <div class="pageContent">
+                    <div class="Livedemo">
+                        <div class="center">
+                            <p>Unordered list</p>
+                            <ul>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="pageContent">
                     <h2>Code Snippet</h2>
-                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="oNPXYwV"
-                        data-user="Sri01729"
-                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Sri01729/pen/oNPXYwV">
-                                Untitled</a> by Sri (<a href="https://codepen.io/Sri01729">@Sri01729</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    <div id="codeSnippet">
+                        <pre>
+                    <code>
+
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        &lt;ol&gt;
+                        &lt;li&gt;Item 1&lt;/li&gt;
+                        &lt;li&gt;Item 2&lt;/li&gt;
+                        &lt;li&gt;Item 3&lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;ul&gt;
+                        &lt;li&gt;Item&lt;/li&gt;
+                        &lt;li&gt;Item&lt;/li&gt;
+                        &lt;li&gt;Item&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;label&gt;Some text here&lt;/label&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+
+                    </code>
+                         </pre>
+                    </div>
                 </div>
             </main>
             <!--  ******************************  Footer  ********************************* -->

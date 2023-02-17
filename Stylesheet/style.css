@@ -10,30 +10,35 @@ body {
   font-size: 1.8rem; /* 18px */
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #161b21;
+  background-color: black;
   line-height: 30px;
 }
 
 .container {
   width: 100%;
-  background-color: #161b21;
+  background-color: black;
   float: left;
 }
 
 /* ----------------------------- Header  styling ---------------------------- */
 
 header {
-  background-color: #161b21;
+  background-color: black;
   text-align: center;
-  color: brown;
+  color: red;
   font-family: fantasy;
   font-size: 30px;
   margin-bottom: 30px;
   margin-top: -25px;
 }
 
-h2 {
-  color: brown;
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 {
+  color: red;
 }
 /* ----------------------------- Logo positioning ---------------------------- */
 
@@ -47,7 +52,7 @@ h2 {
 
 .pageContent {
   width: 100%;
-  background-color: #161b21;
+  background-color: black;
   color: aliceblue;
   margin-left: 10px;
   padding-left: 10px;
@@ -70,13 +75,13 @@ h2 {
 /* ----------------------------- Side menulist styling ---------------------------- */
 
 .menuList {
-  background-color: #161b21;
+  background-color: black;
   color: aliceblue;
   float: left;
   height: 960px;
   overflow-y: scroll;
   scrollbar-width: remove;
-  border: 1px brown;
+  border: 1px red;
 }
 
 /* ----------------------------- Search box styling ---------------------------- */
@@ -108,14 +113,14 @@ h2 {
 /* ----------------------------- List elements hovering effects styling ---------------------------- */
 
 #list li a:hover {
-  background-color: brown;
-  color: #161b21;
+  background-color: red;
+  color: black;
 }
 
 /* ----------------------------- Footer styling ---------------------------- */
 
 footer {
-  color: brown;
+  color: red;
   margin-top: 50px;
   padding: 2px;
 }
@@ -163,10 +168,18 @@ footer {
 }
 
 .btn:hover {
-  background-color: brown;
+  background-color: red;
   color: white;
 }
 
+.formbtn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+
+  text-align: center;
+  font-size: 16px;
+}
 /* ----------------------------- Code snippet Styling ---------------------------- */
 code {
   font-family: Courier, "New Courier", monospace;
@@ -250,12 +263,12 @@ code {
 .circle1,
 .circle2,
 .circle3 {
-  background-color: brown;
+  background-color: red;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   margin: 20px 20px 0px 20px;
-  border: 20px solid black;
+  border: 20px solid #161b21;
 }
 
 .circle2 {
@@ -263,7 +276,7 @@ code {
 }
 
 .circle3 {
-  background-color: #161b21;
+  background-color: black;
 }
 
 /* --------        --------         --------      Styling for gridsystem.html       --------       --------       --------  */
@@ -276,13 +289,13 @@ code {
   justify-content: space-between;
   justify-content: space-around;
   margin: 20px;
-  border: 5px solid brown;
+  border: 5px solid red;
 }
 
 .flexelement {
   width: 200px;
   height: 100px;
-  border: 3px solid brown;
+  border: 3px solid red;
   margin: 10px;
   text-align: center;
 }
@@ -292,14 +305,14 @@ code {
 }
 
 .flexelement:hover {
-  background-color: brown; /* Grid element hover effect */
+  background-color: red; /* Grid element hover effect */
 }
 
 /* ----------------------------- fixed grid styling ---------------------------- */
 .fixedgridcontainer {
   width: 80%;
   margin: 0 auto;
-  border: 5px solid brown;
+  border: 5px solid red;
 }
 
 .fixedrow {
@@ -310,7 +323,7 @@ code {
 .fixedcol {
   width: 33.33%;
   padding: 10px;
-  border: 3px solid brown;
+  border: 3px solid red;
 }
 
 /* ----------------------------- Responsive grid styling ---------------------------- */
@@ -318,7 +331,7 @@ code {
 .rescontainer {
   width: 80%;
   margin: 0 auto;
-  border: 5px solid brown;
+  border: 5px solid red;
 }
 
 .resrow {
@@ -329,7 +342,7 @@ code {
 .rescol {
   width: 100%;
   padding: 10px;
-  border: 3px solid brown;
+  border: 3px solid red;
 }
 
 @media (min-width: 768px) {
@@ -346,13 +359,13 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 5px solid brown;
+  border: 5px solid red;
 }
 
 .flexcol {
   width: 33.33%;
   padding: 30px;
-  border: 3px solid brown;
+  border: 3px solid red;
 }
 
 /* ----------------------------- using grid styling ---------------------------- */
@@ -380,14 +393,14 @@ code {
     "menu main main main right right"
     "menu footer footer footer footer footer";
   gap: 10px;
-  background-color: #161b21;
+  background-color: black;
   padding: 10px;
   width: 80%;
   padding-left: 110px;
 }
 
 .flexgridcontainer div {
-  background-color: brown;
+  background-color: red;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
@@ -396,10 +409,12 @@ code {
 
 /* --------        --------         --------      Styling for form.html       --------       --------       --------  */
 
-form {
-  background-color: brown;
+.form {
+  background-color: black;
   margin: 20px 0px 20px 0px;
   padding: 10px;
+  color: red;
+  border: 1px solid aliceblue;
 }
 
 /* --------        --------         --------      Styling for cards.html       --------       --------       --------  */
@@ -420,7 +435,7 @@ form {
 }
 
 .flip-card {
-  background-color: #161b21;
+  background-color: aliceblue;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -430,6 +445,7 @@ form {
   perspective: 1000px;
   border-radius: 15px 50px;
   margin-top: 10px;
+  color: #000000;
 }
 
 .flip-card-inner {
@@ -464,14 +480,14 @@ form {
 }
 
 .flip-card-front {
-  background-color: brown;
+  background-color: aliceblue;
   color: #f2d2bd;
   padding-top: 0px;
 }
 
 .flip-card-back {
   background-color: whitesmoke;
-  color: #161b21;
+  color: black;
   overflow-y: scroll;
 
   transform: rotateY(180deg);
@@ -543,7 +559,7 @@ form {
 }
 
 input:checked + .slider {
-  background-color: brown;
+  background-color: red;
 }
 
 input:focus + .slider {
@@ -566,7 +582,7 @@ input:checked + .slider:before {
 
 /* --------        --------         --------      Styling for align.html       --------       --------       --------  */
 
-/* ----------------------------- Styling of aligning the text left  ---------------------------- */
+/* ----------------------------- Styling of aligning the text ---------------------------- */
 
 .Livedemo1 {
   display: flex;
@@ -580,7 +596,7 @@ input:checked + .slider:before {
 .right,
 .Center {
   margin: 10px 0px 10px 0px;
-  color: brown;
+  color: red;
   text-align: left;
   border: 1px solid white;
   padding-left: 10px;
@@ -594,6 +610,149 @@ input:checked + .slider:before {
 .right {
   text-align: right;
   padding-right: 10px;
+}
+
+a {
+  transition: transform 0.2s;
+}
+a:hover {
+  transform: scale(1.1);
+}
+
+/* ----------------------------- Styling for dialog box ---------------------------- */
+/*Reference:(https://codepen.io/dcode-software/pen/LKywLG) */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap");
+
+.confirm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  box-sizing: border-box;
+
+  opacity: 0;
+  animation-name: confirm---open;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm--close {
+  animation-name: confirm---close;
+}
+
+.confirm__window {
+  width: 100%;
+  max-width: 600px;
+  background: aliceblue;
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  opacity: 0;
+  transform: scale(0.75);
+  animation-name: confirm__window---open;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+.confirm__titlebar,
+.confirm__content,
+.confirm__buttons {
+  padding: 1.25em;
+}
+
+.confirm__titlebar {
+  background: black;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.confirm__title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.confirm__close {
+  background: none;
+  outline: none;
+  border: none;
+  transform: scale(2.5);
+  color: #ffffff;
+  transition: color 0.15s;
+}
+
+.confirm__close:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.confirm__content {
+  line-height: 1.8em;
+}
+
+.confirm__buttons {
+  background: aliceblue;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirm__button {
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
+  background: black;
+  color: red;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 0.6em;
+  cursor: pointer;
+  outline: none;
+}
+
+.confirm__button--fill {
+  background: black;
+  color: red;
+}
+
+.confirm__button:focus {
+  box-shadow: 0 0 3px rgba(255, 0, 0, 0.5);
+}
+
+@keyframes confirm---open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes confirm---close {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes confirm__window---open {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /*------------------------------------Media queries-------------------------------------*/
@@ -633,12 +792,12 @@ input:checked + .slider:before {
     display: none;
   }
   .menu-container.menu-open a.icon {
-    color: brown;
+    color: red;
     display: block;
     position: absolute;
   }
   .icon {
-    color: brown;
+    color: red;
   }
   .menu-container.menu-open .menuList {
     display: block;
@@ -668,12 +827,12 @@ input:checked + .slider:before {
     display: none;
   }
   .menu-container.menu-open a.icon {
-    color: brown;
+    color: red;
     display: block;
     position: absolute;
   }
   .icon {
-    color: brown;
+    color: red;
   }
   .menu-container.menu-open .menuList {
     display: block;
@@ -686,7 +845,7 @@ input:checked + .slider:before {
       "menu main main main right right"
       "menu footer footer footer footer footer";
     gap: 10px;
-    background-color: #161b21;
+    background-color: black;
     padding: 10px;
     width: 80%;
     padding-left: 20px;
@@ -705,4 +864,34 @@ input:checked + .slider:before {
   .icon {
     visibility: hidden;
   }
+}
+
+input[type="radio"]:after,
+input[type="checkbox"]:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after,
+input[type="checkbox"]:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: red;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
 }
