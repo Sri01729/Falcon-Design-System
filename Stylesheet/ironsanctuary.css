@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+/* alternative root font size to allow easier conversion from px to rem */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem; /* 16px */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: black;
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: red; /* scroll thumb and track */
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+h2,
+h3 {
+  font-family: Chancery, cursive;
+  color: red;
+}
+q {
+  font-family: Chancery, cursive;
+}
+/* ----------------------------- Scroll bar styling ---------------------------- */
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: black; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid black; /* creates padding around scroll thumb */
+}
+
+/* ----------------------------- Header styling ---------------------------- */
+header {
+  background-color: black;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+  float: left;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 10px;
+  float: right;
+}
+nav .toggle {
+  display: none;
+}
+.list {
+  text-align: center;
+  padding-right: 120px;
+  padding-top: 10px;
+}
+
+nav a {
+  color: aliceblue; /* Change the colour of the links in the nav  */
+  font-size: medium;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: solid;
+}
+
+nav li a:hover {
+  background-color: red;
+  color: black;
+}
+/* -----------------------------Backgorund Video Styling ---------------------------- */
+
+#videocontainer,
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-overlay {
+  background-color: black;
+  opacity: 0.3;
+}
+.overlay h1 {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  background: #000 none repeat scroll 0 0;
+  color: red;
+  font-weight: 600;
+  margin: 2rem 3rem 0;
+  mix-blend-mode: overlay;
+  padding: 5px 15px;
+  top: 50%;
+  position: absolute;
+}
+
+.Intro {
+  margin-top: 740px;
+  background: red;
+  color: black;
+  font-weight: 600;
+  font-size: medium;
+  width: 100%;
+  min-height: 300px;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: auto;
+}
