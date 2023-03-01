@@ -22,26 +22,34 @@
 
         <!--  ****************************** Nav bar ********************************* -->
         <nav>
+
+
             <div class="logo">
                 <img src="images/logo1.png" alt="Logo">
             </div>
             <h1>IRON SANCTUARY</h1>
-            <ul class="pages">
-                <li><a href="#">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Classes &#9662;</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Online classses</a></li>
-                        <li><a href="#">Offline classes</a></li>
-                        <li><a href="#">Group classes</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="navigation">Gallery</a></li>
-                <li><a href="#" class="navigation">Trainers</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="contact.html" class="navigation">Contact
-                        Us</a></li>
-            </ul>
+
+            <div class="menu-container">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul id="pages">
+                    <li><a href="ironsanctuary.html" style="background-color: red; color:black">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Classes &#9662;</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Online classses</a></li>
+                            <li><a href="#">Offline classes</a></li>
+                            <li><a href="#">Group classes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="navigation">Gallery</a></li>
+                    <li><a href="#" class="navigation">Trainers</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html" class="navigation">Contact
+                            Us</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -63,7 +71,7 @@
         <div class="Intro">
             <div class="introcontainer">
                 <div class="content">
-                    <h2>Who we are and What we do</h2>
+                    <h2>WHO WE ARE AND WHAT WE DO</h2>
                     <p>When you embark on your fitness journey, Iron Sanctuary is a website dedicated to helping you
                         with
                         helpful tools,
@@ -93,10 +101,10 @@
 
         <div class="Intro1">
             <hr>
-            <h2>Why choose us?</h2>
+            <h2>WHY CHOOSE US?</h2>
             <div class="allcards">
                 <article class="cards">
-                    <h3>Experienced Fitness Professionals</h3>
+                    <h3>EXPERIENCED FITNESS PROFESSIONALS</h3>
                     <img src="images/trainer.jpg" alt="trainers image" style="padding-bottom: 50px;">
                     <p>
                     <ul>
@@ -113,7 +121,7 @@
                 </article>
 
                 <article class="cards">
-                    <h3>Supportive Community</h3>
+                    <h3>SUPPORTIVE COMMUNITY</h3>
                     <p>Fitness, in our opinion, is about more than simply working out; it's also about being a
                         part of a community that
                         supports you and pushes you to be your best. For individuals of all fitness levels, Iron
@@ -133,13 +141,13 @@
             <div class="cards-container">
                 <a href="#" class="card1">
                     <img src="images/workout.jpg" alt="Workout" class="card-image">
-                    <h3 class="card-title">Workout</h3>
+                    <h3 class="card-title">WORKOUT</h3>
                     <p class="card-description">Find the best exercises for your fitness goals and get tips from
                         experts.</p>
                 </a>
                 <a href="#" class="card1">
                     <img src="images/nutrition.jpg" alt="Nutrition" class="card-image">
-                    <h3 class="card-title">Nutrition</h3>
+                    <h3 class="card-title">NUTRITION</h3>
                     <p class="card-description">Learn how to fuel your body with healthy and delicious meals, and get
                         expert advice
                         on supplements.</p>
@@ -152,7 +160,7 @@
 
         <div class="Intro1">
             <hr>
-            <h2>Meet our magnificient trainers</h2>
+            <h2>MEET OUR MAGNIFICIENT TRAINERS</h2>
             <div class="flipcards-container">
                 <div class="flipcard">
                     <div class="flipcard-inner">
@@ -204,7 +212,7 @@
         </div>
 
         <div class="Intro1">
-            <h2>Fitness centres near</h2>
+            <h2>FITNESS CENTER NEAR YOU</h2>
             <div class="carousel">
                 <div class="slide">
                     <a
@@ -257,12 +265,20 @@
             <article class="footercards">
                 <h3>SUBSCRIBE US</h3>
                 <p>
-                    Signup to the newslteer to get the latest news and offers.
+                    Signup to the newsletter to get the latest news and offers.
                 </p>
 
                 <input type="text" id="Email" name="Email" placeholder="Enter Your Email.."
                     style="height: 50px ; width:200px"><br><br>
                 <button class="btn">GET NOTIFIED</button>
+                <script>
+                    document.querySelector('.btn').addEventListener('click', () => {
+                        Confirm.open({
+                            title: 'Dialog box',
+                            message: 'Do you want to submit?'
+                        })
+                    });
+                </script>
 
             </article>
 
@@ -271,13 +287,9 @@
                 <a href="ironsanctuary.html"><img src="images/gallery.png" alt="gallery collage"
                         style="height: 300px; height: 300px"></a>
             </article>
-
-
-
         </div>
-
     </footer>
-
+    <script src="Javascript/appp.js"></script>
 </body>
 
 </html>
