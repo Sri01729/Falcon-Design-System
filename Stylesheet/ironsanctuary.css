@@ -13,6 +13,7 @@ body {
   background-color: black;
   scrollbar-width: thin; /* "auto" or "thin" */
   scrollbar-color: red; /* scroll thumb and track */
+  line-height: 30px;
 }
 html,
 body {
@@ -49,6 +50,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 2;
+  margin-top: -30px;
 }
 nav {
   background-color: black;
@@ -57,11 +59,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+
   border-bottom: solid 1px red;
 }
 
 .logo img {
   height: 50px;
+  margin-bottom: -45px;
 }
 
 nav h1 {
@@ -69,6 +73,7 @@ nav h1 {
   margin: 0;
   color: red;
   font-family: Impact, sans-serif;
+  margin-bottom: -50px;
 }
 
 #pages {
