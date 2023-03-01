@@ -7,7 +7,7 @@
     <title>Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon11.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,29 +19,30 @@
 <body>
     <!--  ******************************  Header  ********************************* -->
     <header>
-        <div class="header-nav">
-            <div class="logo">
-                <a href="home.html"><img src="images/Logo.png" alt="comoxvalleylifeline Logo" width="200"
-                        height="55"></a>
-            </div>
-        </div>
-        <div class="logo">
-            <h1>Iron Sanctuary</h1>
-        </div>
-        <!--  ******************************  Nav bar  ********************************* -->
+
+        <!--  ****************************** Nav bar ********************************* -->
         <nav>
-            <ul id="nav-items">
-                <li><a href="home.html" class="navigation">Home</a></li>
-                <li><a href="#" class="navigation">Classes</a></li>
+            <div class="logo">
+                <img src="images/logo1.png" alt="Logo">
+            </div>
+            <h1>IRON SANCTUARY</h1>
+            <ul class="pages">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Classes &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Online classses</a></li>
+                        <li><a href="#">Offline classes</a></li>
+                        <li><a href="#">Group classes</a></li>
+                    </ul>
+                </li>
                 <li><a href="#" class="navigation">Gallery</a></li>
                 <li><a href="#" class="navigation">Trainers</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="contact.html" class="navigation">Contact
                         Us</a></li>
             </ul>
-            <a class="toggle" onclick="showNav()"><i class="fa
-                        fa-bars"></i></a>
         </nav>
-
     </header>
 
     <!--  ******************************  Backgorund video ********************************* -->
@@ -52,78 +53,228 @@
 
         <div class="video-overlay"></div>
         <div class="overlay">
-            <h1>Iron Sanctuary<br>
-                <q>Sweat now, shine later</q>
+            <h1>
+                <q>SWEAT NOW, SHINE LATER</q>
             </h1>
         </div>
     </div>
 
     <main>
         <div class="Intro">
-            <h2>Who we are and What we do</h2>
-            <p>
-                When you embark on your fitness journey, Iron Sanctuary is a website dedicated to helping you with
-                helpful tools,
-                advice, and information. We are committed to assisting individuals of all fitness levels in reaching
-                their objectives.
-                Our staff is made up of seasoned fitness experts and enthusiasts. Our website provides you with a range
-                of fitness tips,
-                tricks, and resources to help you develop your strength, stamina, and general health and wellness. We
-                consider mental
-                and emotional health to be as important to physical health when discussing fitness. Achieve your maximum
-                potential and
-                develop into the best version of yourself by being a part of our encouraging community now.
-            </p>
+            <div class="introcontainer">
+                <div class="content">
+                    <h2>Who we are and What we do</h2>
+                    <p>When you embark on your fitness journey, Iron Sanctuary is a website dedicated to helping you
+                        with
+                        helpful tools,
+                        advice, and information. We are committed to assisting individuals of all fitness levels in
+                        reaching
+                        their objectives.
+                        Our staff is made up of seasoned fitness experts and enthusiasts. Our website provides you with
+                        a
+                        range
+                        of fitness tips,
+                        tricks, and resources to help you develop your strength, stamina, and general health and
+                        wellness.
+                        We
+                        consider mental
+                        and emotional health to be as important to physical health when discussing fitness. Achieve your
+                        maximum
+                        potential and
+                        develop into the best version of yourself by being a part of our encouraging community now.</p>
+
+                    <button class="btn">Read more</button>
+                </div>
+                <img src="images/introimage.jpg" alt="Right side image">
+            </div>
         </div>
 
-        <!--  ******************************  Flipcards block ********************************* -->
-        <div class="Intr">
+
+
+        <div class="Intro1">
+            <hr>
             <h2>Why choose us?</h2>
-            <section class="flip-card-container">
+            <div class="allcards">
+                <article class="cards">
+                    <h3>Experienced Fitness Professionals</h3>
+                    <img src="images/trainer.jpg" alt="trainers image" style="padding-bottom: 50px;">
+                    <p>
+                    <ul>
+                        <li>Iron Sanctuary has a team of experienced fitness experts who are committed to helping you
+                            achieve your fitness goals.</li>
+                        <li>The trainers at Iron Sanctuary are knowledgeable in the latest fitness methods, ideas, and
+                            equipment and have years of
+                            experience.</li>
+                        <li>The team is dedicated to providing personalized advice and assistance at every stage because
+                            they understand that each
+                            person has unique fitness goals and needs.</li>
+                    </ul>
+                    </p>
+                </article>
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/card1.png" alt="trainer image" style="width:300px;height:300px;">
-                            <!--    <h3>Experienced Fitness Professionals</h3>-->
+                <article class="cards">
+                    <h3>Supportive Community</h3>
+                    <p>Fitness, in our opinion, is about more than simply working out; it's also about being a
+                        part of a community that
+                        supports you and pushes you to be your best. For individuals of all fitness levels, Iron
+                        Sanctuary offers a warm and
+                        accepting environment. Whether you are an experienced athlete or you are just getting
+                        started, our community will
+                        inspire and help you to realize your best potential.
+                    </p>
+                    <img src="images/community.jpeg" alt=" Group of people working together image"
+                        style="padding-top: 70px;">
+                </article>
+            </div>
+        </div>
+
+        <div class="Intro1">
+            <hr>
+            <div class="cards-container">
+                <a href="#" class="card1">
+                    <img src="images/workout.jpg" alt="Workout" class="card-image">
+                    <h3 class="card-title">Workout</h3>
+                    <p class="card-description">Find the best exercises for your fitness goals and get tips from
+                        experts.</p>
+                </a>
+                <a href="#" class="card1">
+                    <img src="images/nutrition.jpg" alt="Nutrition" class="card-image">
+                    <h3 class="card-title">Nutrition</h3>
+                    <p class="card-description">Learn how to fuel your body with healthy and delicious meals, and get
+                        expert advice
+                        on supplements.</p>
+                </a>
+            </div>
+        </div>
+
+
+        <!--  ******************************  Flipcards  ********************************* -->
+
+        <div class="Intro1">
+            <hr>
+            <h2>Meet our magnificient trainers</h2>
+            <div class="flipcards-container">
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <img src="images/01.jpg" alt="Card 1 Front">
+                            <h3>Sonia</h3>
                         </div>
-                        <div class="flip-card-back">
-                            <p>
-                            </p>
+                        <div class="flipcard-back">
+                            <p>Specializes in strength training, HIIT, and nutrition coaching.</p>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Supportive Community</h3>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <img src="images/02.jpg" alt="Card 1 Front">
+                            <h3>Jeff</h3>
                         </div>
-                        <div class="flip-card-back">
-                            <p>
-                            </p>
+                        <div class="flipcard-back">
+                            <p>Expertise in sports-specific training, injury prevention and rehabilitation.</p>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Comprehensive Resources</h3>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <img src="images/03.jpg" alt="Card 1 Front">
+                            <h3>Celina</h3>
                         </div>
-                        <div class="flip-card-back">
-                            <p>
-                            </p>
+                        <div class="flipcard-back">
+                            <p>Specializes in yoga, meditation, and nutrition coaching.</p>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <img src="images/04.jpg" alt="Card 1 Front">
+                            <h3>David</h3>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Specializes in powerlifting and
+                                strength training.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Intro1">
+            <h2>Fitness centres near</h2>
+            <div class="carousel">
+                <div class="slide">
+                    <a
+                        href="https://www.google.com/maps?rlz=1C5GCEM_enCA1024CA1024&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=Kb9PumrzE4hUMZVvjHSxPLlm&daddr=489+Old+Island+Hwy,+Courtenay,+BC+V9N+3P5"><img
+                            src="images/Lewis.jpeg" alt="Image 1"></a>
+                </div>
+                <div class="slide">
+                    <img src="images/fitnessexcel.jpeg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="images/anytime.jpeg" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="images/strong.jpeg" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="images/wild.png" alt=" Image 5">
+                </div>
+            </div>
         </div>
     </main>
 
+
     <footer>
+
+        <div class="allcardsfooter">
+
+            <article class="footercards">
+                <h3> ABOUT US</h3>
+                <p>Our website includes a wide selection of articles, videos, and ideas on fitness, nutrition, and
+                    healthy lifestyle
+                    practices. We think that fitness is about more than just physical health; it is also about mental
+                    health and general
+                    enjoyment. Through exercise, we hope to inspire and motivate you to live your best life. Thank you
+                    for visiting our
+                    website. We hope you find the material on this page useful and enlightening.</p>
+            </article>
+
+
+            <article class="footercards">
+                <h3>USEFUL LINKS</h3>
+                <p><a href="">About</a></p>
+                <p><a href="">Our Trainers</a></p>
+                <p><a href="">Services</a></p>
+                <p><a href="">Classes</a></p>
+                <p><a href="">Bmi Calculator</a></p>
+
+            </article>
+
+            <article class="footercards">
+                <h3>SUBSCRIBE US</h3>
+                <p>
+                    Signup to the newslteer to get the latest news and offers.
+                </p>
+
+                <input type="text" id="Email" name="Email" placeholder="Enter Your Email.."
+                    style="height: 50px ; width:200px"><br><br>
+                <button class="btn">GET NOTIFIED</button>
+
+            </article>
+
+            <article class="footercards">
+                <h3>OUR GALLERY</h3>
+                <a href="ironsanctuary.html"><img src="images/gallery.png" alt="gallery collage"
+                        style="height: 300px; height: 300px"></a>
+            </article>
+
+
+
+        </div>
 
     </footer>
 

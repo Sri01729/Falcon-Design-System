@@ -157,7 +157,7 @@ footer {
 }
 
 .btn {
-  background-color: #ddd;
+  background-color: red;
   border: none;
   color: black;
   padding: 16px 32px;
@@ -168,7 +168,7 @@ footer {
 }
 
 .btn:hover {
-  background-color: red;
+  background-color: rgb(202, 4, 4);
   color: white;
 }
 
@@ -434,65 +434,53 @@ code {
   width: 100%;
 }
 
-.flip-card {
-  background-color: aliceblue;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  display: block;
-  width: 300px;
-  height: 100px;
+.flipcard {
+  width: 250px;
+  height: 320px;
+  margin: 20px;
   perspective: 1000px;
-  border-radius: 15px 50px;
-  margin-top: 10px;
-  color: #000000;
+  box-shadow: -1px 2px 2px 0px rgba(255, 0, 0, 0.8);
 }
 
-.flip-card-inner {
-  position: relative;
+.flipcard-inner {
   width: 100%;
   height: 100%;
-  text-align: center;
+  position: relative;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 15px 50px;
 }
 
-.flip-card:hover .flip-card-inner {
+.flipcard:hover .flipcard-inner {
   transform: rotateY(180deg);
-  cursor: pointer;
 }
 
-.flip-card-front,
-.flip-card-back {
+.flipcard-front,
+.flipcard-back {
   position: absolute;
-  display: flex;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  text-align: center;
+  display: flex;
   flex-direction: column;
-  padding: auto;
-  overflow-wrap: break-word;
-  border-radius: 15px 50px;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
 }
 
-.flip-card-front {
-  background-color: aliceblue;
-  color: #f2d2bd;
-  padding-top: 0px;
+.flipcard-front img,
+.flipcard-back img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.flip-card-back {
-  background-color: whitesmoke;
-  color: black;
-  overflow-y: scroll;
-
+.flipcard-back {
   transform: rotateY(180deg);
 }
 
+.flipcard:hover {
+  box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
 /* --------        --------         --------      Styling for tooltip.html       --------       --------       --------  */
 
 /* ----------------------------- Tooltip styling ---------------------------- */
@@ -618,7 +606,21 @@ a {
 a:hover {
   transform: scale(1.1);
 }
-
+/* ----------------------------- Styling for list group ---------------------------- */
+ul {
+  list-style: none;
+}
+ol li::marker {
+  color: red;
+}
+.pageContent .Livedemo .center ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
 /* ----------------------------- Styling for dialog box ---------------------------- */
 /*Reference:(https://codepen.io/dcode-software/pen/LKywLG) */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap");

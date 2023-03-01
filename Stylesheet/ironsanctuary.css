@@ -19,14 +19,14 @@ body {
   overflow-x: hidden;
 }
 
-h1,
 h2,
 h3 {
-  font-family: Chancery, cursive;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: red;
+  padding-bottom: 16px;
 }
 q {
-  font-family: Chancery, cursive;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 /* ----------------------------- Scroll bar styling ---------------------------- */
 body::-webkit-scrollbar {
@@ -46,32 +46,50 @@ body::-webkit-scrollbar-thumb {
 /* ----------------------------- Header styling ---------------------------- */
 header {
   background-color: black;
-  overflow: hidden;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
 }
-
-.logo {
-  float: left;
-}
-
-nav ul {
-  list-style-type: none;
+nav {
+  background-color: black;
+  color: #fff;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  gap: 10px;
-  float: right;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: solid 1px red;
 }
-nav .toggle {
-  display: none;
+
+.logo img {
+  height: 50px;
 }
-.list {
-  text-align: center;
-  padding-right: 120px;
-  padding-top: 10px;
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+  color: red;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.pages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.pages li {
+  margin-left: 20px;
+}
+
+.pages li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pages li a:hover {
+  text-decoration: underline;
 }
 
 nav a {
@@ -81,12 +99,42 @@ nav a {
   display: inline-block;
   padding: 10px;
   text-decoration: solid;
+  z-index: 7;
+}
+.dropdown {
+  position: relative;
 }
 
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  padding: 10px;
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  text-decoration: underline;
+}
 nav li a:hover {
   background-color: red;
   color: black;
 }
+
 /* -----------------------------Backgorund Video Styling ---------------------------- */
 
 #videocontainer,
@@ -97,7 +145,7 @@ nav li a:hover {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1;
+  z-index: -6;
 }
 
 .video-overlay {
@@ -105,7 +153,7 @@ nav li a:hover {
   opacity: 0.3;
 }
 .overlay h1 {
-  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-family: sans-serif;
   background: #000 none repeat scroll 0 0;
   color: red;
   font-weight: 600;
@@ -115,23 +163,230 @@ nav li a:hover {
   top: 50%;
   position: absolute;
 }
-
+/* */
 .Intro {
   margin-top: 740px;
+  background: black;
+  color: aliceblue;
+  overflow: auto;
+  padding: 0px 120px 0px 120px;
+  text-align: justify;
+}
+/* */
+.Intro1 {
+  background: black;
+  font-weight: 600;
+  font-size: medium;
+  width: 100%;
+  padding: 0px 120px 0px 120px;
+  overflow: auto;
+  margin-top: 100px;
+}
+hr {
+  border: 1px solid red;
+  margin-bottom: 100px;
+}
+/* */
+.container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  flex-basis: calc(25% - 20px);
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-text {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-basis: calc(25% - 20px);
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  box-shadow: red;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.card1:hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #888;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.introcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
   background: black;
   color: aliceblue;
   font-weight: 600;
   font-size: medium;
   width: 100%;
-  min-height: 300px;
-  padding: 50px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: auto;
 }
 
-.flip-card-container {
-  padding-top: 40px;
-  padding-bottom: 100px;
+.introcontainer img {
+  max-width: 50%;
+  height: auto;
+  margin-left: 120px;
+}
+
+.introcontainer .content {
+  max-width: 50%;
+}
+
+.btn {
+  background-color: red;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(202, 4, 4);
+  color: white;
+}
+
+.flipcards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flipcard {
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+  perspective: 1000px;
+  box-shadow: -1px 2px 2px 0px rgba(255, 0, 0, 0.8);
+}
+
+.flipcard-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flipcard:hover .flipcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flipcard-front,
+.flipcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.flipcard-front img,
+.flipcard-back img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.flipcard-back {
+  transform: rotateY(180deg);
+}
+
+.flipcard:hover {
+  box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+.leftcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.leftcontainer img {
+  max-width: 40%;
+  height: auto;
+  margin-right: 300px;
+  margin-left: -60px;
+}
+
+.leftcontent {
+  max-width: 50%;
+  color: aliceblue;
+}
+
+.allcards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -139,61 +394,90 @@ nav li a:hover {
   gap: 10px;
   background-color: black;
   margin: 0;
-  width: 100%;
 }
 
-.flip-card {
-  background-color: black;
-
-  display: block;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-  border-radius: 15px 50px;
-  margin-top: 10px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.Intro1 h2 {
   text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 15px 50px;
+  padding-bottom: 50px;
+  text-decoration: underline;
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-  cursor: pointer;
+.cards {
+  width: 50%;
+  margin: 0px 30px 70px 30px;
+  color: aliceblue;
+  padding: 0px 0px 0px 0px;
+  text-align: justify;
+}
+.cards img {
+  max-width: 90%;
 }
 
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
+ul {
+  list-style: none;
+}
+ol li::marker {
+  color: red;
+}
+.Intro1 ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.carousel {
   display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 40vw;
+  height: 40vh;
+  margin-right: 20px;
+  scroll-snap-align: start;
+}
+
+.carousel img {
   width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  text-align: center;
-  flex-direction: column;
-  padding: auto;
-  overflow-wrap: break-word;
-  border-radius: 15px 50px;
+  height: 300px;
+  border: solid 1px red;
 }
 
-.flip-card-front {
+.allcardsfooter {
   background-color: black;
-  color: #f2d2bd;
-  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 100px;
+  border-top: solid 1px red;
+}
+.allcardsfooter h3 {
+  color: red;
 }
 
-.flip-card-back {
-  background-color: whitesmoke;
-  color: black;
-  overflow-y: scroll;
+.footercards {
+  box-sizing: border-box;
+  float: left;
+  width: calc(33% - 60px);
+  padding-left: 20px;
+  margin: 0px 30px 70px 30px;
+  color: aliceblue;
+  background-color: black;
+  text-align: justify;
+}
 
-  transform: rotateY(180deg);
+.footercards a {
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+.footercards a:hover {
+  color: red;
 }

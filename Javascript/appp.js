@@ -105,3 +105,29 @@ const Confirm = {
         });
     }
 };
+
+
+const toggleSwitch = document.querySelector('.toggle');
+const body = document.querySelector('body');
+
+// Check user's preference for theme
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme === 'dark') {
+  body.classList.add('dark-mode');
+  toggleSwitch.checked = true;
+}
+
+// Switch theme function
+function switchTheme(event) {
+  if (event.target.checked) {
+    body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    body.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+// Event listener for switch
+toggleSwitch.addEventListener('change', switchTheme);
