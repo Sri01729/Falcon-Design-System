@@ -59,7 +59,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-
   border-bottom: solid 1px red;
 }
 
@@ -69,7 +68,7 @@ nav {
 }
 
 nav h1 {
-  font-size: 48px;
+  font-size: 38px;
   margin: 0;
   color: red;
   font-family: Impact, sans-serif;
@@ -744,6 +743,23 @@ input[type="checkbox"]:checked:after {
   nav ul {
     display: none;
   }
+  header {
+    background-color: black;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  .logo img {
+    height: 50px;
+  }
+
+  nav h1 {
+    font-size: 32px;
+    margin: 0;
+    color: red;
+    font-family: Impact, sans-serif;
+    margin-bottom: -50px;
+  }
   .menu-container.menu-open a.icon {
     color: red;
     display: block;
@@ -795,7 +811,7 @@ input[type="checkbox"]:checked:after {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
   html,
   body {
     width: 100%;
@@ -803,6 +819,12 @@ input[type="checkbox"]:checked:after {
   }
   nav ul {
     display: none;
+  }
+  nav h1 {
+    font-size: 32px;
+
+    color: red;
+    font-family: Impact, sans-serif;
   }
   .menu-container.menu-open a.icon {
     color: red;
@@ -815,6 +837,7 @@ input[type="checkbox"]:checked:after {
   .icon {
     color: red;
     font-size: 45px;
+    margin-top: 50px;
   }
 
   nav {
@@ -865,9 +888,14 @@ input[type="checkbox"]:checked:after {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 868px) {
   .icon {
     visibility: hidden;
+  }
+  nav h1 {
+    font-size: 38px;
+    color: red;
+    font-family: Impact, sans-serif;
   }
 }
 
