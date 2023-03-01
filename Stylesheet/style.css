@@ -883,6 +883,7 @@ nav li a:hover {
   }
   .icon {
     color: red;
+    font-size: 35px;
   }
   .menu-container.menu-open .menuList {
     display: block;
@@ -918,6 +919,7 @@ nav li a:hover {
   }
   .icon {
     color: red;
+    font-size: 35px;
   }
   .menu-container.menu-open .menuList {
     display: block;
