@@ -12,7 +12,7 @@ body {
   margin: 0;
   background-color: black;
   scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: red; /* scroll thumb and track */
+  scrollbar-color: #da1d25; /* scroll thumb and track */
   line-height: 30px;
 }
 html,
@@ -23,7 +23,7 @@ body {
 h2,
 h3 {
   font-family: Impact, sans-serif;
-  color: red;
+  color: #da1d25;
   padding-bottom: 16px;
 }
 q {
@@ -59,7 +59,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: solid 1px red;
+  border-bottom: solid 1px #da1d25;
 }
 
 .logo img {
@@ -70,7 +70,7 @@ nav {
 nav h1 {
   font-size: 38px;
   margin: 0;
-  color: red;
+  color: #da1d25;
   font-family: Impact, sans-serif;
   margin-bottom: -50px;
 }
@@ -134,7 +134,7 @@ nav a {
   text-decoration: underline;
 }
 nav li a:hover {
-  background-color: red;
+  background-color: #da1d25;
   color: black;
 }
 
@@ -158,7 +158,7 @@ nav li a:hover {
 .overlay h1 {
   font-family: sans-serif;
   background: #000 none repeat scroll 0 0;
-  color: red;
+  color: #da1d25;
   font-weight: 600;
   margin: 2rem 3rem 0;
   mix-blend-mode: overlay;
@@ -186,7 +186,7 @@ nav li a:hover {
   margin-top: 100px;
 }
 hr {
-  border: 1px solid red;
+  border: 1px solid #da1d25;
   margin-bottom: 100px;
 }
 /* */
@@ -234,7 +234,7 @@ hr {
   align-items: center;
   justify-content: center;
   background-color: black;
-  box-shadow: red;
+  box-shadow: #da1d25;
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
@@ -244,10 +244,10 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 
-.card1:hover:hover {
+/*.card1:hover:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+}*/
 
 .card-image {
   width: 100%;
@@ -295,7 +295,7 @@ hr {
 }
 
 .btn {
-  background-color: red;
+  background-color: #da1d25;
   border: none;
   color: black;
   padding: 16px 32px;
@@ -416,11 +416,11 @@ ul {
   list-style: none;
 }
 ol li::marker {
-  color: red;
+  color: #da1d25;
 }
 .Intro1 ul li::before {
   content: "\2022";
-  color: red;
+  color: #da1d25;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -444,7 +444,7 @@ ol li::marker {
 .carousel img {
   width: 100%;
   height: 300px;
-  border: solid 1px red;
+  border: solid 1px #da1d25;
 }
 
 .allcardsfooter {
@@ -455,10 +455,10 @@ ol li::marker {
   justify-content: space-around;
   gap: 10px;
   margin-top: 100px;
-  border-top: solid 1px red;
+  border-top: solid 1px #da1d25;
 }
 .allcardsfooter h3 {
-  color: red;
+  color: #da1d25;
 }
 
 .footercards {
@@ -478,7 +478,7 @@ ol li::marker {
 }
 
 .footercards a:hover {
-  color: red;
+  color: #da1d25;
 }
 
 /* contact page*/
@@ -486,7 +486,7 @@ input[type="text"],
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid red;
+  border: 1px solid #da1d25;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -550,17 +550,17 @@ input.radio {
   background-color: black;
   padding: 0px 120px 0px 120px;
   margin: 30px 90px 30px 90px;
-  box-shadow: red;
+  box-shadow: #da1d25;
   overflow: hidden;
 }
 .heading h1 {
-  color: red;
+  color: #da1d25;
   text-align: center;
   margin-top: 16px;
   font-family: Impact, sans-serif;
 }
 option:hover {
-  background-color: red;
+  background-color: #da1d25;
 }
 
 .form {
@@ -591,7 +591,7 @@ input[type="checkbox"]:checked:after {
   top: -2px;
   left: -1px;
   position: relative;
-  background-color: red;
+  background-color: #da1d25;
   content: "";
   display: inline-block;
   visibility: visible;
@@ -687,7 +687,7 @@ input[type="checkbox"]:checked:after {
   padding: 0.4em 0.8em;
   border-radius: 5px;
   background: black;
-  color: red;
+  color: #da1d25;
   font-weight: bold;
   font-size: 1.1em;
   font-family: "Noto Sans", sans-serif;
@@ -698,7 +698,7 @@ input[type="checkbox"]:checked:after {
 
 .confirm__button--fill {
   background: black;
-  color: red;
+  color: #da1d25;
 }
 
 .confirm__button:focus {
@@ -756,12 +756,12 @@ input[type="checkbox"]:checked:after {
   nav h1 {
     font-size: 32px;
     margin: 0;
-    color: red;
+    color: #da1d25;
     font-family: Impact, sans-serif;
     margin-bottom: -50px;
   }
   .menu-container.menu-open a.icon {
-    color: red;
+    color: #da1d25;
     display: block;
     position: absolute;
   }
@@ -769,7 +769,7 @@ input[type="checkbox"]:checked:after {
     display: block;
   }
   .icon {
-    color: red;
+    color: #da1d25;
   }
 
   nav {
@@ -823,11 +823,11 @@ input[type="checkbox"]:checked:after {
   nav h1 {
     font-size: 32px;
 
-    color: red;
+    color: #da1d25;
     font-family: Impact, sans-serif;
   }
   .menu-container.menu-open a.icon {
-    color: red;
+    color: #da1d25;
     display: block;
     position: absolute;
   }
@@ -835,7 +835,7 @@ input[type="checkbox"]:checked:after {
     display: block;
   }
   .icon {
-    color: red;
+    color: #da1d25;
     font-size: 45px;
     margin-top: 50px;
   }
@@ -894,7 +894,7 @@ input[type="checkbox"]:checked:after {
   }
   nav h1 {
     font-size: 38px;
-    color: red;
+    color: #da1d25;
     font-family: Impact, sans-serif;
   }
 }
