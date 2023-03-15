@@ -6,7 +6,8 @@ let result;
 /*  Hamburger menu button */
 function showNav() {
           var element = document.getElementById("pages");
-          element.classList.toggle("show-items");
+    element.classList.toggle("show-items");
+
         }
 
 /* Dialog box */

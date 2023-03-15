@@ -173,7 +173,6 @@ nav li a:hover {
   color: aliceblue;
   overflow: auto;
   padding: 0px 120px 0px 120px;
-  text-align: justify;
 }
 /* */
 .Intro1 {
@@ -244,10 +243,10 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 
-/*.card1:hover:hover {
+.card1:hover:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}*/
+}
 
 .card-image {
   width: 100%;
@@ -405,8 +404,6 @@ hr {
   width: 50%;
   margin: 0px 30px 70px 30px;
   color: aliceblue;
-  padding: 0px 0px 0px 0px;
-  text-align: justify;
 }
 .cards img {
   max-width: 90%;
@@ -469,7 +466,6 @@ ol li::marker {
   margin: 0px 30px 70px 30px;
   color: aliceblue;
   background-color: black;
-  text-align: justify;
 }
 
 .footercards a {
@@ -734,7 +730,7 @@ input[type="checkbox"]:checked:after {
 
 /* Small devices (portrait tablets and large phones, 600px and down) */
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 760px) {
   html,
   body {
     width: 100%;
@@ -753,12 +749,31 @@ input[type="checkbox"]:checked:after {
     height: 50px;
   }
 
+  .Intro {
+    margin-top: 740px;
+    background: black;
+    color: aliceblue;
+    overflow: auto;
+    padding: 0px 0px 0px 0px;
+  }
+  /* */
+  .Intro1 {
+    background: black;
+    font-weight: 600;
+    font-size: medium;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    overflow: auto;
+    margin-top: 100px;
+  }
+  nav ul {
+    display: none;
+  }
   nav h1 {
     font-size: 32px;
-    margin: 0;
+
     color: #da1d25;
     font-family: Impact, sans-serif;
-    margin-bottom: -50px;
   }
   .menu-container.menu-open a.icon {
     color: #da1d25;
@@ -770,6 +785,8 @@ input[type="checkbox"]:checked:after {
   }
   .icon {
     color: #da1d25;
+    font-size: 45px;
+    margin-top: 50px;
   }
 
   nav {
@@ -778,6 +795,12 @@ input[type="checkbox"]:checked:after {
 
   #pages {
     display: none;
+  }
+  .introcontainer img {
+    max-width: 90%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 60px;
   }
   .allcards {
     display: flex;
@@ -788,6 +811,21 @@ input[type="checkbox"]:checked:after {
     gap: 10px;
     background-color: black;
     margin: 0;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    box-shadow: #da1d25;
+    border-radius: 5px;
+    margin: 100px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
   }
   .cards-container {
     display: flex;
@@ -809,9 +847,17 @@ input[type="checkbox"]:checked:after {
     width: 100%;
     overflow: auto;
   }
+  .allcardsfooter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px -500px 0px -500px;
+  }
 }
 
-@media only screen and (max-width: 868px) {
+@media only screen and (min-width: 760px) and (max-width: 868px) {
   html,
   body {
     width: 100%;
@@ -847,7 +893,29 @@ input[type="checkbox"]:checked:after {
   #pages {
     display: none;
   }
-
+  .Intro {
+    margin-top: 740px;
+    background: black;
+    color: aliceblue;
+    overflow: auto;
+    padding: 0px 0px 0px 0px;
+  }
+  /* */
+  .Intro1 {
+    background: black;
+    font-weight: 600;
+    font-size: medium;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    overflow: auto;
+    margin-top: 100px;
+  }
+  .introcontainer img {
+    max-width: 90%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 60px;
+  }
   .allcards {
     display: flex;
     flex-direction: row;
@@ -857,6 +925,21 @@ input[type="checkbox"]:checked:after {
     gap: 10px;
     background-color: black;
     margin: 0;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    box-shadow: #da1d25;
+    border-radius: 5px;
+    margin: 30px 0px 50px 200px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
   }
   .cards-container {
     display: flex;
@@ -884,6 +967,10 @@ input[type="checkbox"]:checked:after {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    margin: 20px -500px 0px -500px;
+  }
+  .footercards {
+    padding: -100px;
   }
 }
 
@@ -897,6 +984,11 @@ input[type="checkbox"]:checked:after {
     color: #da1d25;
     font-family: Impact, sans-serif;
   }
+  .introcontainer img {
+    max-width: 50%;
+    height: auto;
+    margin-left: auto;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -904,4 +996,28 @@ input[type="checkbox"]:checked:after {
   .icon {
     visibility: hidden;
   }
+}
+.close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 20px;
+  background-color: #da1d25;
+  transform: rotate(45deg) translate(-50%, -50%);
+  transform-origin: top left;
+  content: "";
+}
+.close:after {
+  transform: rotate(-45deg) translate(-50%, -50%);
 }

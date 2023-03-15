@@ -29,8 +29,11 @@ function confirmMessage() {
 const menuToggle = document.querySelector('.icon');
 const menuContainer = document.querySelector('.menu-container');
 
-menuToggle.addEventListener('click', function() {
-  menuContainer.classList.toggle('menu-open');
+menuToggle.addEventListener('click', function () {
+
+    menuContainer.classList.toggle('menu-open');
+    menuToggle.style.left = "12px";
+     menuToggle.style.top = "-42px";
 });
 
 /* Dialog box */
