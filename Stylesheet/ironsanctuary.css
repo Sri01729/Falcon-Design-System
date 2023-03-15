@@ -508,6 +508,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 1em 0px 8px;
+  margin-top: -7px;
 }
 
 input[type="radio"],
@@ -554,6 +555,9 @@ input.radio {
   text-align: center;
   margin-top: 16px;
   font-family: Impact, sans-serif;
+}
+option {
+  width: 90px;
 }
 option:hover {
   background-color: #da1d25;
