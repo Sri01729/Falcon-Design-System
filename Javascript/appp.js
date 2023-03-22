@@ -110,4 +110,17 @@ const Confirm = {
 };
 
 
+/* Display error message for email */
+
+
+var email = document.getElementById("Email");
+
+email.addEventListener("keyup", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("Please enter a valid email ");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+
 
