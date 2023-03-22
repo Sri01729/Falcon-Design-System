@@ -309,7 +309,6 @@ hr {
   font-size: 16px;
   margin: 4px 2px;
   transition: 0.3s;
-  cursor: pointer;
 }
 .btn1 {
   background-color: red;
@@ -320,11 +319,10 @@ hr {
   font-size: 16px;
   margin: 4px 2px;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .btn:hover,
-.btn1:hover:hover {
+.btn1:hover {
   background-color: rgb(202, 4, 4);
   color: white;
 }
