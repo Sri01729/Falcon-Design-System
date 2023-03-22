@@ -168,8 +168,9 @@ nav li a:hover {
 }
 
 .contact-banner {
-  height: 400px;
-  width: auto;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
   background-image: url(images/contact-banner.jpg);
   background-size: cover;
 }
@@ -888,6 +889,9 @@ input[type="checkbox"]:checked:after {
     flex-direction: column;
     margin: 20px -500px 0px -500px;
   }
+  .contact-banner {
+    height: 20vh;
+  }
 }
 
 @media only screen and (min-width: 760px) and (max-width: 868px) {
@@ -1004,6 +1008,9 @@ input[type="checkbox"]:checked:after {
   .footercards {
     padding: -100px;
   }
+  .contact-banner {
+    height: 30vh;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1020,6 +1027,9 @@ input[type="checkbox"]:checked:after {
     max-width: 50%;
     height: auto;
     margin-left: auto;
+  }
+  .contact-banner {
+    height: 30vh;
   }
 }
 
