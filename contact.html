@@ -48,7 +48,11 @@
         </nav>
     </header>
     <main>
-
+        <div class="contact-banner">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id accusantium quisquam ducimus odit
+                nihil nam facilis nisi consectetur dolores, odio reprehenderit tenetur perferendis, laboriosam
+                voluptatum commodi, hic molestias mollitia.</p>
+        </div>
         <!--  ****************************** Forms code ********************************* -->
         <div class="heading">
             <h1 style="margin-top:40px;">CONTACT US</h1>
@@ -65,12 +69,12 @@
                 <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                 <label>Are you new to fitness?</label><br><br>
                 <div class="some-class">
-                    <input type="radio" class="radio" name="x" value="y" id="y" />
+                    <input type="radio" class="radio" name="x" value="y" id="y" style="margin-bottom: 19px;" />
                     <label for="y">Yes</label>
                     <input type="radio" class="radio" name="x" value="z" id="z" />
                     <label for="z">No</label>
                 </div><br><br><br>
-                <label for="gender">Gender:</label>
+                <label for="gender" style="margin-top: 0px; ">Gender:</label>
                 <select name="gender" id="gender" style="max-width:90%;" onfocus="this.size=2;" onblur="this.size=0;"
                     onchange="this.size=2; this.blur();">
                     <option value="male">Male</option>
@@ -81,8 +85,7 @@
                 <input type="text" id="Email" name="Email" placeholder="Your Email..">
 
                 <label>Comments:</label><br>
-                <textarea id="Comments" name="Comments" placeholder="Write
-                            something.."></textarea><br><br>
+                <textarea id="Comments" name="Comments" placeholder="Your comments here"></textarea><br><br>
                 <!-- Reference:(https://codepen.io/dcode-software/pen/LKywLG) -->
                 <button class="btn">SUBMIT</button>
                 <script>
@@ -132,7 +135,7 @@
             <article class="footercards">
                 <h3>SUBSCRIBE US</h3>
                 <p>
-                    Signup to the newslteer to get the latest news and offers.
+                    Signup to the newsletter to get the latest news and offers.
                 </p>
 
                 <input type="text" id="E-mail" name="Email" placeholder="Enter Your Email.."

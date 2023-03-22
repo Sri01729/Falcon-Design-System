@@ -178,7 +178,19 @@ footer {
   transition: 0.3s;
 }
 
-.btn:hover {
+.btn2 {
+  background-color: red;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 13px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn2:hover {
   background-color: rgb(202, 4, 4);
   color: white;
 }
@@ -421,11 +433,44 @@ code {
 /* --------        --------         --------      Styling for form.html       --------       --------       --------  */
 
 .form {
-  background-color: black;
-  margin: 20px 0px 20px 0px;
-  padding: 10px;
-  color: red;
-  border: 1px solid aliceblue;
+  float: left;
+  margin: 0 1.5%;
+  width: 100%;
+}
+input[type="radio"]:after,
+input[type="checkbox"]:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after,
+input[type="checkbox"]:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: red;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+option {
+  width: 90px;
+}
+option:hover {
+  background-color: red;
 }
 
 /* --------        --------         --------      Styling for cards.html       --------       --------       --------  */
@@ -450,7 +495,6 @@ code {
   height: 320px;
   margin: 20px;
   perspective: 1000px;
-  box-shadow: -1px 2px 2px 0px rgba(255, 0, 0, 0.8);
 }
 
 .flipcard-inner {
@@ -624,7 +668,7 @@ ul {
 ol li::marker {
   color: red;
 }
-.pageContent .Livedemo .center ul li::before {
+.pageContent ul li::before {
   content: "\2022";
   color: red;
   font-weight: bold;
@@ -810,12 +854,10 @@ input[type="checkbox"]:checked:after {
 .pages li a {
   color: #fff;
   text-decoration: none;
+  list-style: none;
   font-weight: bold;
 }
 
-.pages li a:hover {
-  text-decoration: underline;
-}
 .dropdown {
   position: relative;
 }
@@ -844,12 +886,21 @@ input[type="checkbox"]:checked:after {
 
 .dropdown-menu li a:hover {
   text-decoration: underline;
-}
-nav li a:hover {
   background-color: red;
-  color: black;
+  padding: 3px;
 }
 
+.Intro1 {
+  background: black;
+  font-weight: 600;
+  font-size: medium;
+  width: 100%;
+  overflow: auto;
+  margin-top: 100px;
+  margin-left: 10px;
+  padding-left: 10px;
+  margin-bottom: 50px;
+}
 .carousel {
   display: flex;
   overflow-x: scroll;
@@ -859,16 +910,21 @@ nav li a:hover {
 
 .slide {
   flex: 0 0 auto;
-  width: 20vw;
-  height: 20vh;
+  width: 40vw;
+  height: 40vh;
   margin-right: 20px;
   scroll-snap-align: start;
 }
 
 .carousel img {
   width: 100%;
-  height: 100px;
-  border: solid 1px #da1d25;
+  height: 300px;
+  cursor: pointer;
+}
+#videocontainer {
+  width: 80vw;
+  height: 70vh;
+  object-fit: cover;
 }
 
 /*------------------------------------Media queries-------------------------------------*/

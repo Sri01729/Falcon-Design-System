@@ -35,6 +35,7 @@
             <ul>
               <li><a href="Button.html">Buttons</a></li>
               <li><a href="cards.html">Card</a></li>
+              <li><a href="carousel.html">Carousel</a></li>
               <li><a href="checkbox.html">Checkbox</a></li>
               <li><a href="dialog.html">Dialog</a></li>
               <li><a href="field.html">Field</a></li>
@@ -46,6 +47,7 @@
               <li><a href="radiobutton.html">Radio Button</a></li>
               <li><a href="toogle.html">Toogle</a></li>
               <li><a href="tooltip.html">Tooltip</a></li>
+              <li><a href="video.html">Video</a></li>
             </ul>
           </li>
           <li>
@@ -110,14 +112,15 @@
               <div class="form">
                 <label>Your Name: </label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
-                <label for="cars">Gender:</label>
-                <select name="gender" id="gender">
+                <label for="gender" style="margin-top: 0px; ">Gender:</label>
+                <select name="gender" id="gender" style="max-width:90%;" onfocus="this.size=2;" onblur="this.size=0;"
+                  onchange="this.size=2; this.blur();">
                   <option value="male">Male</option>
                   <option value="female">Female</option>
                 </select> <br>
                 <label>Email: </label>
                 <input type="text" id="Email" name="Email" placeholder="Your Email.."><br>
-                <input type="submit" value="Submit" style="color: red; background-color:black;">
+                <input type="submit" value="Submit" class="btn2">
                 <script>
                   document.querySelector("[type='submit']").addEventListener('click', () => {
                     Confirm.open({
@@ -133,10 +136,10 @@
 
         <div class="pageContent">
           <h2>Code Snippet</h2>
-          <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="mdGJqQB"
+          <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vYzVaOP"
             data-user="Sri01729"
             style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-            <span>See the Pen <a href="https://codepen.io/Sri01729/pen/mdGJqQB">
+            <span>See the Pen <a href="https://codepen.io/Sri01729/pen/vYzVaOP">
                 Form</a> by Sri (<a href="https://codepen.io/Sri01729">@Sri01729</a>)
               on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
@@ -146,6 +149,8 @@
       <!--  ******************************  Footer  ********************************* -->
       <footer>
         <div>
+          <p style="color:aliceblue;">Click here for <a href="ironsanctuary.html" style="color:red;">Sample
+              Website</a></p>
           <p>
             <span>&copy;</span>
             <i>Copyright by SAI SRINIVAS ALAHARI, 2023. All rights
