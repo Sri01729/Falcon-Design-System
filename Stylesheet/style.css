@@ -119,6 +119,7 @@ h1 {
   text-decoration: none;
   display: block;
   color: aliceblue;
+  margin: 5px;
 }
 
 /* ----------------------------- List elements hovering effects styling ---------------------------- */
