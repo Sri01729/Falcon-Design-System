@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon11.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Stylesheet/style1.css">
+</head>
+
+<body>
+    <!--  ******************************  Header  ********************************* -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="ironsanctuary.html"> <img src="images/logo1.png" alt="Logo"></a>
+            </div>
+            <h1>IRON SANCTUARY</h1>
+            <div class="menu-container">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul id="pages">
+                    <li><a href="ironsanctuary.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Classes &#9662;</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Online classses</a></li>
+                            <li><a href="#">Offline classes</a></li>
+                            <li><a href="#">Group classes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="navigation">Gallery</a></li>
+                    <li><a href="#" class="navigation">Trainers</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html" class="navigation" style="background-color: red; color:black">Contact
+                            Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-banner">
+
+        </div>
+        <!--  ****************************** Forms code ********************************* -->
+
+        <div class="container">
+
+            <section id="contact">
+
+
+
+                <div class="contact-wrapper">
+
+                    <!-- Left contact page -->
+
+                    <form id="contact-form" class="form-horizontal" role="form">
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="name" placeholder="NAME" name="name"
+                                    value="" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email"
+                                    value="" required>
+                            </div>
+                        </div>
+
+                        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"
+                            required></textarea>
+
+                        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                            <div class="alt-send-button">
+                                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                            </div>
+
+                        </button>
+
+                    </form>
+
+                    <!-- Left contact page -->
+
+                    <div class="direct-contact-container">
+
+                        <ul class="contact-list">
+                            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span
+                                        class="contact-text place">City,
+                                        State</span></i></li>
+
+                            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                                            href="tel:1-212-555-5555" title="Give me a call">(212)
+                                            555-2368</a></span></i></li>
+
+                            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                                            href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i>
+                            </li>
+
+                        </ul>
+
+                        <hr>
+                        <ul class="social-media-list">
+                            <li><a href="#" target="_blank" class="contact-icon">
+                                    <i class="fa fa-github" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank" class="contact-icon">
+                                    <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank" class="contact-icon">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank" class="contact-icon">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                        <hr>
+
+                        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <script>
+                document.querySelector('.btn').addEventListener('click', () => {
+                    Confirm.open({
+                        title: 'MESSAGE',
+                        message: 'Do you want to submit?'
+                    })
+                });
+            </script>
+
+
+
+
+        </div>
+    </main>
+
+
+
+
+    <!--  ******************************  Footer  ********************************* -->
+    <footer>
+        <div class="allcardsfooter">
+
+            <article class="footercards">
+                <h3> ABOUT US</h3>
+                <p>Our website includes a wide selection of articles, videos, and ideas on fitness, nutrition, and
+                    healthy lifestyle
+                    practices. We think that fitness is about more than just physical health; it is also about mental
+                    health and general
+                    enjoyment. Through exercise, we hope to inspire and motivate you to live your best life. Thank you
+                    for visiting our
+                    website. We hope you find the material on this page useful and enlightening.</p>
+            </article>
+
+
+            <article class="footercards">
+                <h3>USEFUL LINKS</h3>
+                <p><a href="">About</a></p>
+                <p><a href="">Our Trainers</a></p>
+                <p><a href="">Services</a></p>
+                <p><a href="">Classes</a></p>
+                <p><a href="">Bmi Calculator</a></p>
+
+            </article>
+
+            <article class="footercards">
+                <h3>SUBSCRIBE US</h3>
+                <p>
+                    Signup to the newsletter to get the latest news and offers.
+                </p>
+
+                <input type="text" id="E-mail" name="Email" placeholder="Enter Your Email.."
+                    style="height: 50px ; width:200px"><br><br>
+                <button class="btn">GET NOTIFIED</button>
+
+            </article>
+
+            <article class="footercards">
+                <h3>OUR GALLERY</h3>
+                <a href="ironsanctuary.html"><img src="images/gallery.png" alt="gallery collage"
+                        style="height: 300px; height: 300px"></a>
+            </article>
+        </div>
+    </footer>
+    <script src="Javascript/appp.js"></script>
+</body>
+
+</html>

@@ -438,8 +438,7 @@ code {
   margin: 0 1.5%;
   width: 100%;
 }
-input[type="radio"]:after,
-input[type="checkbox"]:after {
+input[type="radio"]:after {
   width: 10px;
   height: 10px;
   border-radius: 15px;
@@ -453,8 +452,7 @@ input[type="checkbox"]:after {
   border: 2px solid white;
 }
 
-input[type="radio"]:checked:after,
-input[type="checkbox"]:checked:after {
+input[type="radio"]:checked:after {
   width: 10px;
   height: 10px;
   border-radius: 15px;
@@ -811,8 +809,7 @@ ol li::marker {
   }
 }
 
-input[type="radio"]:after,
-input[type="checkbox"]:after {
+input[type="radio"]:after {
   width: 10px;
   height: 10px;
   border-radius: 15px;
@@ -826,8 +823,7 @@ input[type="checkbox"]:after {
   border: 2px solid white;
 }
 
-input[type="radio"]:checked:after,
-input[type="checkbox"]:checked:after {
+input[type="radio"]:checked:after {
   width: 10px;
   height: 10px;
   border-radius: 15px;
@@ -1039,4 +1035,46 @@ input[type="checkbox"]:checked:after {
   .icon {
     visibility: hidden;
   }
+}
+
+.red-checkbox {
+  --checkbox-color: aliceblue;
+}
+
+/* Checkbox style */
+.red-checkbox[type="checkbox"] {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  -webkit-appearance: none;
+  background-color: var(--checkbox-color);
+  border: 1px solid var(--checkbox-color);
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Checked state */
+.red-checkbox[type="checkbox"]:checked {
+  background-color: var(--checkbox-color);
+}
+
+/* Checkmark style */
+.red-checkbox[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  width: 5px;
+  height: 10px;
+  border: 3px solid red;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Checked state checkmark */
+.red-checkbox[type="checkbox"]:checked::after {
+  opacity: 1;
 }
