@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="Stylesheet/style1.css">
+    <link rel="stylesheet" href="Stylesheet/ironsanctuary.css">
 </head>
 
 <body>
@@ -52,97 +52,53 @@
 
         </div>
         <!--  ****************************** Forms code ********************************* -->
+        <div class="heading">
+            <h1 style="margin-top:40px;">CONTACT US</h1>
+        </div>
+        <div class="container">
+
+            <div class="form">
 
 
+                <label>First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-        <section id="contact">
+                <label>Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label>Are you new to fitness?</label><br><br>
+                <div class="some-class">
+                    <input type="radio" class="radio" name="x" value="y" id="y" style="margin-bottom: 19px;">
+                    <label for="y">Yes</label>
+                    <input type="radio" class="radio" name="x" value="z" id="z">
+                    <label for="z">No</label>
+                </div><br><br><br>
+                <label for="gender" style="margin-top: 0px; ">Gender:</label>
+                <select name="gender" id="gender" style="max-width:90%;" onfocus="this.size=2;" onblur="this.size=0;"
+                    onchange="this.size=2; this.blur();">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select> <br><br>
 
-            <div class="contact-wrapper">
+                <label>Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Your Email..">
+                <span id="emailError" class="error"></span>
+                <label>Comments:</label><br>
+                <textarea id="Comments" name="Comments" placeholder="Your comments here"></textarea><br><br>
+                <!-- Reference:(https://codepen.io/dcode-software/pen/LKywLG) -->
+                <button class="btn">SUBMIT</button>
+                <script>
+                    document.querySelector('.btn').addEventListener('click', () => {
+                        Confirm.open({
+                            title: 'MESSAGE',
+                            message: 'Do you want to submit?'
+                        })
+                    });
+                </script>
 
-                <!-- Left contact page -->
-
-                <form id="contact-form" class="form-horizontal" role="form">
-
-                    <form id="contact-form" class="form-horizontal" role="form">
-
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="text" class="form-control" id="name" placeholder="NAME" name="name"
-                                    value="" required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                            <input type="text" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
-                                required>
-                        </div>
-                    </div>
-
-                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id="message"
-                        required></textarea>
-
-                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                        <div class="alt-send-button">
-                            <i class="fa fa-paper-plane"></i>
-                        </div>
-
-                    </button>
-
-                </form>
-
-                <!-- Right contact page -->
-
-                <div class="direct-contact-container">
-
-                    <ul class="contact-list">
-                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City,
-                                    State</span></i></li>
-
-                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                                        href="tel:1-212-555-5555" title="Give me a call">(212)
-                                        555-2368</a></span></i></li>
-
-                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                                        href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i>
-                        </li>
-
-                    </ul>
-
-                    <hr>
-                    <ul class="social-media-list">
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                    <hr>
-
-
-
-                </div>
 
             </div>
 
-        </section>
-
-        <script>
-            document.querySelector('.btn').addEventListener('click', () => {
-                Confirm.open({
-                    title: 'MESSAGE',
-                    message: 'Do you want to submit?'
-                })
-            });
-        </script>
+        </div>
     </main>
 
 
