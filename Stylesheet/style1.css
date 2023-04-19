@@ -14,7 +14,15 @@
   text-transform: uppercase;
   letter-spacing: 6px;
 }
-
+#str {
+  padding: 20px;
+  font-family: Impact, sans-serif;
+  font-size: 40px;
+  margin-top: 60px;
+  color: red;
+  font-weight: bold;
+  background: black;
+}
 .contact-wrapper {
   display: flex;
   flex-direction: row;

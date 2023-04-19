@@ -763,7 +763,86 @@ input[type="checkbox"]:checked:after {
     transform: scale(1);
   }
 }
+#mySidenav a {
+  position: fixed;
+  right: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 190px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  top: 700px;
+}
 
+/*-------- For navigation bar hover effect---------*/
+#mySidenav a:hover {
+  right: 0;
+}
+
+/*-------- For navigation bar position---------*/
+#str {
+  padding: 20px;
+  font-family: Impact, sans-serif;
+  font-size: 40px;
+  margin-top: 60px;
+  color: red;
+  font-weight: bold;
+  background: black;
+}
+#mybtn {
+  top: 280px;
+  background-color: #998f04ee;
+  z-index: 1;
+}
+#myBtn {
+  background-color: #da1d25;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 /*------------------------------------Media queries-------------------------------------*/
 
 /* Small devices (portrait tablets and large phones, 600px and down) */

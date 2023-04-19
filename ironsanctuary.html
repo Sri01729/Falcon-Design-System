@@ -19,7 +19,28 @@
 <body>
     <!--  ******************************  Header  ********************************* -->
     <header>
+        <div id="mySidenav" class="sidenav">
 
+            <a href="#" id="myBtn">BMI Calculator</a>
+
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>BMI Calculator</h3>
+                    <p>Height (in Cms)</p>
+                    <input type="text" id="height" placeholder="Enter your height in cms">
+                    <p>Weight (in kgs)</p>
+                    <input type="text" id="weight" placeholder="Enter your height in cms">
+                    <button id="btn">Calculator</button>
+                    <div id="result"></div>
+
+                </div>
+            </div>
+        </div>
         <!--  ****************************** Nav bar ********************************* -->
         <nav>
 
@@ -27,7 +48,7 @@
             <div class="logo">
                 <a href="ironsanctuary.html"> <img src="images/logo1.png" alt="Logo"></a>
             </div>
-            <h1>IRON SANCTUARY</h1>
+            <div id="str"></div>
 
             <div class="menu-container">
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -51,6 +72,7 @@
                 </ul>
             </div>
         </nav>
+
     </header>
 
     <!--  ******************************  Backgorund video ********************************* -->
@@ -184,6 +206,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="flipcard">
                     <div class="flipcard-inner">
                         <div class="flipcard-front">
@@ -258,7 +281,7 @@
                 <p><a href="">Our Trainers</a></p>
                 <p><a href="">Services</a></p>
                 <p><a href="">Classes</a></p>
-                <p><a href="">Bmi Calculator</a></p>
+                <!-- Trigger/Open The Modal -->
 
             </article>
 
@@ -269,7 +292,7 @@
                 </p>
 
                 <input type="text" id="Email" name="Email" placeholder="Enter Your Email.."
-                    style="height: 50px ; width:200px"><br><br>
+                    style="height: 50px ; width:200px" required><br><br>
                 <button class="btn">GET NOTIFIED</button>
                 <script>
                     document.querySelector('.btn').addEventListener('click', () => {
