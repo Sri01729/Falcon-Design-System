@@ -109,18 +109,22 @@ const Confirm = {
     }
 };
 
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const submitBtn = document.getElementById('submit');
 
-/* Display error message for email */
+nameInput.addEventListener('input', validateForm);
+emailInput.addEventListener('input', validateForm);
+messageInput.addEventListener('input', validateForm);
 
-
-var email = document.getElementById("Email");
-
-email.addEventListener("keyup", function (event) {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("Please enter a valid email ");
+function validateForm() {
+  if (nameInput.value.trim() !== '' && emailInput.value.trim() !== '' && messageInput.value.trim() !== '') {
+    submitBtn.disabled = false;
   } else {
-    email.setCustomValidity("");
+    submitBtn.disabled = true;
   }
-});
+}
+
 
 
