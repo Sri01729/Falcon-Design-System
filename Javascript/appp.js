@@ -68,6 +68,24 @@ function calculateBMI() {
 	}
 }
 
+// Website title animation
+
+// This line creates a variable 'string' and assigns it a string value "IRON SANCTUARY".
+var string = "IRON SANCTUARY";
+
+// This line creates a variable 'str' and uses the split() method to convert the string 'string' into an array of characters.
+var str = string.split("");
+
+// This line retrieves an HTML element with the ID 'str' and assigns it to the variable 'el'.
+var el = document.getElementById('str');
+
+// This is a self-invoking function that uses a setTimeout() method to create an animation effect by continuously adding characters from the 'str' array to the innerHTML of the 'el' element.
+(function animate() {
+  // This conditional statement checks if there are any characters left in the 'str' array. If there are, it adds the first character to the innerHTML of the 'el' element, and then removes it from the 'str' array using the shift() method. If there aren't any characters left in the 'str' array, it clears the timeout using clearTimeout() method to stop the animation.
+  str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
+  // This line creates a timeout using the setTimeout() method, which invokes the 'animate' function after a delay of 90 milliseconds and assigns it to the variable 'running'.
+  var running = setTimeout(animate, 90);
+})();
 
 let result;
 /*  Search list function */
@@ -180,23 +198,6 @@ const Confirm = {
 
 
 
-// Website title animation
 
-// This line creates a variable 'string' and assigns it a string value "IRON SANCTUARY".
-var string = "IRON SANCTUARY";
-
-// This line creates a variable 'str' and uses the split() method to convert the string 'string' into an array of characters.
-var str = string.split("");
-
-// This line retrieves an HTML element with the ID 'str' and assigns it to the variable 'el'.
-var el = document.getElementById('str');
-
-// This is a self-invoking function that uses a setTimeout() method to create an animation effect by continuously adding characters from the 'str' array to the innerHTML of the 'el' element.
-(function animate() {
-  // This conditional statement checks if there are any characters left in the 'str' array. If there are, it adds the first character to the innerHTML of the 'el' element, and then removes it from the 'str' array using the shift() method. If there aren't any characters left in the 'str' array, it clears the timeout using clearTimeout() method to stop the animation.
-  str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
-  // This line creates a timeout using the setTimeout() method, which invokes the 'animate' function after a delay of 90 milliseconds and assigns it to the variable 'running'.
-  var running = setTimeout(animate, 90);
-})();
 
 
