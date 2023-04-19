@@ -301,7 +301,8 @@ hr {
   max-width: 50%;
 }
 
-.btn {
+.btn,
+#btn {
   background-color: red;
   border: none;
   color: black;
@@ -827,6 +828,10 @@ input[type="checkbox"]:checked:after {
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content p {
+  color: red;
 }
 
 /* The Close Button */
